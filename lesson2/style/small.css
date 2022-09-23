@@ -17,7 +17,7 @@ align-items: center;
 font-family: 'Merriweather', serif;
 
 }
-header{
+header, footer{
   background-color: var(--color2_header);
   padding: 16px;
 }
