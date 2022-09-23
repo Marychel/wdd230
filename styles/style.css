@@ -1,17 +1,43 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+}
 .center{
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 body {
-  background-color:rgb(203, 208, 199);
+  background-color: #edddd4;
+  max-width: 900px;
+  margin: 0 auto;
+  font-family: 'Merriweather', serif;
 }
 footer {
   text-align: center;
   height: auto;
   padding: 20px;
+  background: #8cb5;
+  font-size: 20px;
 
 }
 h1{
-  text-align: center;
+  text-align: left;
+  margin-left: 15px;
+  font-size: 40px;
 }
+
+h2{
+  font-size: 30px;
+}
+header{
+  display: flex;
+  padding: 1em 9em 1em 1em;
+  background: #8cb5;
+  align-items: center;
+}
+ul{
+  margin-left: 5%;
+  font-size: 25px;
+}
+
