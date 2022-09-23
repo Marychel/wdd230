@@ -10,7 +10,8 @@
 
 body{
 background: #F7F8F8;  /* fallback for old browsers */
-max-width: 900px;
+max-width: 980px;
+min-width: 320px;
 margin: 0 auto;
 text-align: center;
 align-items: center;
@@ -28,7 +29,7 @@ section{
   margin-top: 20px;
   border-radius: 30px;
   border: 2px solid;
-  width: 100%;
+  width: 320px;
 }
  h1{
   font-size: 60px;
@@ -58,7 +59,7 @@ section{
   display: grid;
   justify-content: center;
  }
- 
+
  p a{
   font-size: 15px;
  }
