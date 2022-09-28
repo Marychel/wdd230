@@ -74,5 +74,6 @@ section{
  }
 
  p. site definition{
-  text-align: left;
+  text-align: start;
+  font-size: larger;
  }
