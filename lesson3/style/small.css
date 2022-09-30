@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 :root{
-  --gradient: linear-gradient(90deg, #00B0F0, #00E5DC, #7EF9C1);
+  --gradient: linear-gradient(90deg, #845EC2, #E2F4FB, #3C8DA8);
   --color1: #845EC2;
   --color2: #E2F4FB;
   --color3: #3C8DA8;
