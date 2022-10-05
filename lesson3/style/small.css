@@ -150,3 +150,11 @@ main ul li img{
 .logoimg{
   margin-top: -20px;
 }
+
+td {
+  display: table-cell;
+  vertical-align: inherit;
+  width: 20%;
+  height: 3em;
+  color: yellow;
+}
