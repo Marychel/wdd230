@@ -151,10 +151,13 @@ main ul li img{
   margin-top: -20px;
 }
 
-td {
+.colors {
   display: table-cell;
   vertical-align: inherit;
   width: 20%;
   height: 3em;
   color: yellow;
 }
+
+
+
