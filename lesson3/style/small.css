@@ -131,8 +131,8 @@ h3{
   background-color: var(--color3);
 }
 .accent2{
-  background-color: var(--fontcolor);
-  color: white;
+  background-color: var(--nav);
+  color: red;
 }
 ul li{
   list-style-type: none;
