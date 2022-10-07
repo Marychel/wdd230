@@ -2,12 +2,12 @@
   box-sizing: border-box;
 }
 :root{
-  --gradient: linear-gradient(90deg, #845EC2, #E2F4FB, #3C8DA8, #FEFEDF, #512500);
+  --gradient: linear-gradient(90deg, #845EC2, #E2F4FB, #3C8DA8, #FEFEDF);
   --color1: #845EC2;
   --color2: #E2F4FB;
   --color3: #3C8DA8;
   --fontcolor: #4B4453;
-  --nav: linear-gradient(90deg, #7EF9C1, #00E5DC);
+  --nav: #FEFEDF;
 }
 .logo{
   width: 110px;
@@ -66,7 +66,7 @@ text-align: center;
 padding: 0.5rem;
 text-decoration: none;
 font-size: 1rem;
-  background-image: var(--nav);
+  background: var(--nav);
 }
 nav a:hover {
 color: white;
@@ -78,7 +78,7 @@ nav{
   border-left: 4px solid rgb(255, 255, 255);
 }
 .active {
-color: white;
+color: blue;
 }
 h2,
 h3{
