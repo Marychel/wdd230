@@ -80,7 +80,7 @@ nav{
 .active {
 color: blue;
 }
-h2,
+
 h3{
   padding: 20px;
 }
@@ -157,6 +157,20 @@ tr {
   color: red;
   text-align: center;
 }
+
+h2 {
+	text-align: center;
+	padding: 5px;
+}
+
+.colors {
+	width: 80%;
+	padding: 20px;
+	margin: 0 auto;
+}
+td {
+	text-align: center;
+};
 
 
 
