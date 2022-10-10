@@ -65,7 +65,7 @@ header, footer {
     }
 
     img {
-max-width: 100%;
+max-width: 50%;
     }
     /* Small/Phone View ***************/
 nav {
@@ -150,6 +150,7 @@ main {
 footer{
     text-align: center;
     padding: 20px;
+   
 }
 
 .header{
