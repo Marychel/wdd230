@@ -1,11 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-*{box-sizing: border-box;
-padding: 0;
-margin:0;
-}
 
 :root{
+    font-family: "Merriweather", serif;
+    font-family: "Montserrat", sans-serif;
+
     --gradient: linear-gradient(90deg, #845EC2, #E2F4FB, #3C8DA8, #FEFEDF);
     --color1: #845EC2;
     --color2: #E2F4FB;
@@ -13,6 +12,13 @@ margin:0;
     --fontcolor: #4B4453;
     --nav: #FEFEDF;
   }
+
+*{box-sizing: border-box;
+padding: 0;
+margin:0;
+}
+
+
 
 
   body {
