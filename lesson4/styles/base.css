@@ -56,6 +56,7 @@ body {
   .logoname {
     align-items: center;
     /*margin-left: 0.5rem;*/
+    width: 50%;
   }
   
   .currentDate {
@@ -109,7 +110,7 @@ body {
     padding: 10px 100px 100px 10px;
     border: 1px solid black;
     margin: 5px;
-    background-color: skyblue;
+    background-color: var(--nav);
   }
   
   section.spothlights {
