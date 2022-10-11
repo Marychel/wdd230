@@ -19,7 +19,7 @@ margin:0;
 }
 
   body {
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
     font-size: 18px;
     text-align: left;
@@ -145,6 +145,7 @@ main {
     border: 1px solid brown;
     padding:5px;
     margin-top: 10px;
+    background-color: var(--nav);
 
 }
 footer{
