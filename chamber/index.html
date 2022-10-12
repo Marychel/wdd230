@@ -2,85 +2,90 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description=" content="Marychel Ecommerce">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Akarui Mirai Chamber of Commerce</title>
+  <meta name="author" content="Camila Apai">
+  <meta name="description" content="Week 4, Marychel Calip Home Page Build">
+
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <script src="scripts/script.js" defer></script>
 
-    <title>Akarui Mirai Chamber of Commerce</title>
 </head>
 
 <body>
-    <header>
-        
-        <div class="headstart">
+    <header>       
+        <div class="headerfirst">
             <div class="logoname">
-                <img id="logo" src="images/am-logo.png" alt="Akarui Mirai logo">
-                <div class="mypage">
-                    <h1>AKARUI MIRAI</h1>
-            <span id="subtitle">Chamber of Commerce</span>
-            </div>
-            
-            </div>
-            <div class="sns">
-                <a href="https://www.facebook.com" ><img class="connect" src="images/facebook.svg" alt="Facebook"></a>
-                <a href="https://www.linkedin.com" ><img class="connect" src="images/linkedin.svg" alt="linkedin"></a>
+            <img src="images/am-logo.png" alt="akarui-mirai-logo">
+        </div>
+        <section class="akamira">
+            <h1>Akarui Mirai</h1>
+            <h1 id="smallchamberofcommerce">Chamber of Commerce</h1>
+        </section>
 
-            </div>
-            </div>
-       
-       
+        <div class="sns">
+            <a href="https://www.facebook.com" ><img class="connect" src="images/facebook.svg" alt="Facebook"></a>
+
+            <a href="https://www.linkedin.com" ><img class="connect" src="images/linkedin.svg" alt="linkedin"></a>
+        </div>
+
         <nav>
             <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
-            
-            <ul class="navigation">
-                <li><a href="#" class="">Discover</a></li>
-                <li><a href="#" class="">Directory</a></li>
-                <li><a href="#" class="">Join</a></li>
-                <li><a href="#" class="">Contact</a></li>
+            <ul id="navigation">
+                <li><a href="">Discover</a></li>
+                <li><a href="">Directory</a></li>
+                <li><a href="">Join</a></li>
+                <li><a href="">Contact</a></li>
             </ul>
         </nav>
-
+        </div>
+    
         <p id="currentDate"></p>
-        
-        
+      
     </header>
-    <main>
-        <div class="section" id="hero">Hero with site name and call to action</div>
-        <div class="section" id="event">Event</div>
-        <div class="section" id="weather">Weather</div>
-        <div class="section" id="join">Join</div>
-        <div class="section" id="news_release">News Release</div>
-        <div class="spotlight_container">
-            <div class="spotlight" id="spotlight1" >Spotlight 1</div>
-            <div class="spotlight" id="spotlight2" >Spotlight 2</div>
-            <div class="spotlight" id="spotlight3">Spotlight 3</div>
-        </div>
-    </main>
-    <footer>
-        <div><img class="flogo" src="images/am-logo.png" alt="akarui mirai logo"></div>
-        <div class="name">
-          <h4> Akarui Mirai Chamber of Commerce</h4> 
-        <p>MieKen Japan 514-0101</p>
-        </div>
-        <div class="info">
-          <p>info@akaruimirai.com</p>
-          <p>+81-123-4567-8910</p>
-        
-        </div>
-        <div>
-          &copy; <span id="year"></span>| Akarui Mirai | Marychel Calip | WDD 230 Project | 
-        <span id="lastModif"></span>
-        </div>
-        
-      </footer>
+
+  <main>
+    <section class="hero">Hero with site name and call to action</section>
+    <section class="event">Event</section>
+    <section class="weather">Weather</section>
+    <section class="join">Join</section>
+    <section class="news">News Release</section>
+    <section class="spothlights">
+      <section class="spothlight1">Spothlight 1</section>
+      <section class="spothlight2">Spothlight 2</section>
+      <section class="spothlight3">Spothlight 3</section>
+    </section>
+</main>
+
+  <footer>
+    <div class="logofooter">
+      <img src="images/am-logo.png" alt="akarui-mirai-logo">
+    </div>
+    <div class="locationinfo">
+      <h3>Akarui Mirai Chamber of Commerce</h3>
+      <p>Shiratsuka Eki</p>
+      <p>Tsu Mie Japan 514-0101</p>
+    </div>
+    <div class="info">
+      <p>info@akaruimirai.com</p>
+      <p>+(81) 81-123-4567-8910</p>
+      
+      <a href="https://goo.gl/maps/UoJXnifdeYrWpg1S6">
+        📍Location Map</a>
+    </div>
+    <hr>
+    <p>&copy;<span id="year"></span> Akarui Chamber | Marychel Calip | WDD 230 Project | Last Modification: <span id="lastModified"></span></p>
+</footer>
+  <script src="scripts/dates.js"></script>
 </body>
 
 </html>
+
+
+
