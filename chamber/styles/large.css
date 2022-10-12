@@ -7,4 +7,14 @@
     header nav ul li {
         width: 100%;
     }
+    main {
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: repeat(3, 9em);
+    }
+
+
+
+
+
+
 }

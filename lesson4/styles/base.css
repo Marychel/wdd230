@@ -5,8 +5,8 @@
     font-family: "Merriweather", serif;
     font-family: "Montserrat", sans-serif;
 
-    --gradient: linear-gradient(90deg, #845EC2, #E2F4FB, #3C8DA8, #FEFEDF);
-    --color1: #845EC2;
+    --rainbow: linear-gradient(90deg, #845EC2, #E2F4FB, #3C8DA8, #FEFEDF);
+    --color1: #845ec2;
     --color2: #E2F4FB;
     --color3: #3C8DA8;
     --fontcolor: #4B4453;
@@ -15,7 +15,7 @@
 body {
     margin: 0px;
     max-width: 100%;
-    background-color: var(--gradient);
+    background-color: white;
   }
   
   header {
@@ -23,12 +23,9 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #3C8DA8;
+    background-image: var(--rainbow);
   }
 
-  .headercolor {
-    background-color: #3C8DA8;
-  }
   
   .headerfirst {
     display: flex;
@@ -71,7 +68,7 @@ body {
   footer {
     text-align: center;
     color: black;
-    background-color: var(--gradient);
+    background-image: var(--rainbow);
     display: flex;
     flex-flow: column;
     align-items: center;
