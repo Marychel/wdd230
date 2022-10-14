@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+}
 
 :root{
     font-family: "Merriweather", serif;
@@ -24,6 +30,7 @@ body {
     align-items: center;
     justify-content: center;
     background-image: var(--rainbow);
+    margin: 0 auto;
   }
 
   
@@ -39,25 +46,25 @@ body {
     flex-direction: column;
     font-family: "Merriweather" serif;
     padding: 5px;
+    font-weight: bold;
   }
   
   h1 {
-    font-size: 20px;
+    font-size: 15px;
     margin: 0px;
+    font-family: Merriweather;
   }
   
   #smallchamberofcommerce {
     font-size: 15px;
+    font-family: Merriweather;
+    font-weight: bold;
   }
-  
-  .logoname {
-    align-items: center;
-    /*margin-left: 0.5rem;*/
-    width: 50%;
-  }
-  
-  .currentDate {
+    
+  #currentDate {
     background-color: var(--nav);
+    padding: 10px;
+    font-size: 20px;
     width: 100%;
     margin: 10px;
     grid-column: 1/4;
@@ -79,7 +86,7 @@ body {
   nav,
   footer {
     font-size: 16px;
-    font-family: "Montserrat", sans-serif;
+    font-family: Montserrat;
   }
   
   footer p,
@@ -89,7 +96,7 @@ body {
   
   footer a {
     text-decoration: none;
-    color: white;
+    color: black;
   }
   
   footer a:hover {
@@ -154,7 +161,7 @@ body {
   }
   
   nav ul li a:hover {
-    background-color: #fe8f28;
+    background-color: var(--color1);
     /*background-color: rgba(0, 0, 0, 0.3);*/
   }
   
@@ -177,11 +184,7 @@ body {
   #hamburgerBtn.open span:nth-child(2) {
     display: block;
   }
-  img {
-    width: auto;
-    height: 35px;
-    /*border: dotted red;*/
-  }
+ 
   
   hr {
     border: 0px;
@@ -190,30 +193,6 @@ body {
     height: 1px;
   }
   
-  .fa {
-    padding: 5px;
-    font-size: 30px;
-    width: 30px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 50%;
-    margin: 5px;
-  }
-  
-  .fa:hover {
-    opacity: 0.8;
-    /*background-color: #fe8f28;*/
-  }
-  
-  .fa-facebook {
-    background: #3b5998;
-    color: white;
-  }
-  
-  .fa-linkedin {
-    background: #007bb5;
-    color: white;
-  }
   
   h1 + p,
   h1 + p + p {
@@ -223,5 +202,11 @@ body {
   
   div + h1 {
     font-size: 22px;
+  }
+
+  .logofooter {
+    width: 40%;
+    height: auto;
+    font-family: Merriweather;
   }
   

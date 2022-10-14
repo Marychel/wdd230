@@ -32,5 +32,5 @@ let dayName = day[d.getDay()];
 let monthName = month[d.getMonth()];
 let year = d.getFullYear();
 let currentDate = `${dayName}, ${d.getDate()} ${monthName} ${year}`;
-document.getElementById('year').textContent = currentDate;
+document.getElementById('currentDate').textContent = currentDate;
 
