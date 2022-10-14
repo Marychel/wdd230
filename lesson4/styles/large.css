@@ -1,20 +1,85 @@
-@media only screen and (min-width: 1024px)
-{
-    header nav ul {
-        flex-direction: row;
-        justify-content: space-evenly;
+@media only screen and (min-width: 60em) {
+    h1 {
+      font-size: 30px;
+      margin: 0px;
     }
-    header nav ul li {
-        width: 100%;
+  
+    p,
+    nav,
+    footer {
+      font-size: 16px;
+      font-family: "Abyssinica SIL", Georgia, serif;
     }
+    div + h1 {
+      font-size: 35px;
+    }
+  
     main {
-        grid-template-columns: 1fr 2fr 1fr;
-        grid-template-rows: repeat(3, 9em);
+      grid-template-columns: 1fr 2fr 1fr;
+      grid-template-rows: repeat(3, 9em);
+      max-width: 950px;
+      margin: auto;
     }
+  
+    footer{
+      max-width: 950px;
+      margin: auto;
+    }
+  
+    section.event {
+      grid-column: 1/2;
+      grid-row: 1;
+    }
+  
+    section.weather {
+      grid-column: 1/2;
+      grid-row: 2;
+    }
+  
+    section.join {
+      display: inline;
+      grid-column: 1/2;
+      grid-row: 3;
+    }
+  
+    section.hero {
+      grid-column: 2/3;
+      grid-row: 1/3;
+    }
+  
+    section.news {
+      grid-column: 2/3;
+      grid-row: 3;
+    }
+  
+    .spothlights {
+      flex-direction: column;
+      grid-column: 3/4;
+      grid-row: 1/4;
+    }
+    section.spothlight1,
+    section.spothlight2,
+    section.spothlight3 {
+      height: 100%;
+      width: auto;
+    }
+  
+    section.spothlight3 {
+      display: inline;
+    }
+  
+    .hamBtn{
+      display: none;
+  }
+    .navi{
+      display: flex;
+      justify-content: space-between;
+      width: 300px;
 
-
-
-
-
-
-}
+  }
+    nav ul li a {
+      border-bottom: none;
+    }
+  }
+large.css
+Displaying base.css.

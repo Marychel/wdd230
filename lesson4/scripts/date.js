@@ -1,6 +1,6 @@
 document.querySelector("#year").textContent = new Date().getFullYear();
 
-document.getElementById("lastModif").textContent = `Last Modification:  ${document.lastModified}`;
+document.getElementById("lastModified").textContent = `Last Modification:  ${document.lastModified}`;
 
 
 //current date
@@ -33,11 +33,4 @@ let monthName = month[d.getMonth()];
 let year = d.getFullYear();
 let currentDate = `${dayName}, ${d.getDate()} ${monthName} ${year}`;
 document.getElementById('currentDate').textContent = currentDate;
-//nav
-const hambutton = document.querySelector('.ham');
-const mainnav = document.querySelector('.navigation')
 
-hambutton.addEventListener('click', () => {mainnav.classList.toggle('responsive')}, false);
-
-// To solve the mid resizing issue with responsive class on
-window.onresize = () => {if (window.innerWidth > 760) mainnav.classList.remove('responsive')};
