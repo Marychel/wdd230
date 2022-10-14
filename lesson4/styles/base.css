@@ -129,8 +129,9 @@ p.currentDate{
     flex-flow: column;
     align-items: center;
     justify-content: center;
+    margin: 0 auto;
   }
-  
+
   p,
   nav,
   footer {
