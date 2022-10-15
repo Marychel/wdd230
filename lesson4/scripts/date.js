@@ -1,7 +1,18 @@
+//GETS TOGGLE MENU| Header
+const menuBtn = document.querySelector('.hamBtn');
+const mnav = document.querySelector('.navi');
+
+menuBtn.addEventListener('click', () =>
+{mnav.classList.toggle('open')}, false);
+
+menuBtn.addEventListener('click', () =>
+{menuBtn.classList.toggle('open')}, false);
+
+
+window.onresize = () => {if (window.innerWidth > 760) mnav.classList.remove('open')};
+
+//Full year
 document.querySelector("#year").textContent = new Date().getFullYear();
-
-document.getElementById("lastModified").textContent = `Last Modification:  ${document.lastModified}`;
-
 
 //current date
 let day = [
@@ -31,6 +42,6 @@ let d = new Date();
 let dayName = day[d.getDay()];
 let monthName = month[d.getMonth()];
 let year = d.getFullYear();
-let currentDate = `${dayName}, ${d.getDate()} ${monthName} ${year}`;
-document.getElementById('currentDate').textContent = currentDate;
+document.querySelector('.currentDate').innerHTML = `${dayName}, ${d.getDate()} ${monthName} ${year}`;
+document.querySelector('#currentDate').innerHTML = `${dayName}, ${d.getDate()} ${monthName} ${year}`;
 

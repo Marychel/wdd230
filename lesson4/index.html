@@ -7,7 +7,7 @@
         <title>Akarui Mirai Chamber of Commerce</title>
         <meta name="author" content="Marychel Calip">
         <meta name="description" content="Week 4, Marychel Calip Home Page Build">
-      
+        <link rel="icon" type="image/png" sizes="32x32" href="am-logo.svg">
         <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
           <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
           <link rel="stylesheet" href="styles/normalize.css">
@@ -16,13 +16,13 @@
           <link rel="stylesheet" href="styles/large.css">
       
       </head>
-    <body>
-        <header>
-        <div class="head">
+
+<body>
+    <header>
         <nav>
-            <button onclick="toggleMenu()" class="hamBtn"><span>&#9776;</span><span>&#10006;</span></button>
+            <button class="hamBtn"><span>&#9776;</span><span>&#10006;</span></button>
             <div class="logo">
-                <img src="images/am-logo.svg" alt="akarui-mirai-logo">
+                <img src="am-logo.svg" alt="">
                 <div class="company-name">
                     <h1>Akarui Mirai</h1>
                     <p>Chamber of Commerce</p>
@@ -35,11 +35,10 @@
                 <li><a href="">Contact</a></li>
             </ul>
             <div class="social">
-                <img src="images/facebook.svg" alt="facebook icon">
-                <img src="images/linkedin.svg" alt="linkedin icon">
+                <img src="facebook.svg" alt="facebook icon">
+                <img src="linkedin.svg" alt="linkedin icon">
             </div>
         </nav>
-    </div>
         <p class="currentDate"></p>
     </header>
     <main>
@@ -55,12 +54,13 @@
         </section>
     </main>
     
-      <footer>
+    <footer>
+      <div class="foot-container">
         <div class="logofooter">
-          <img src="images/am-logo.svg" alt="akarui-mirai-logo">
+          <img src="am-logo.svg" alt="akarui-mirai-logo">
         </div>
         <div class="locationinfo">
-          <h3>Akarui Mirai Chamber of Commerce</h3>
+          <h3>Akarui Mirai Chamber of Commerce</h3> 
           <p>Shiratsuka Eki</p>
           <p>Tsu Mie Japan 514-0101</p>
         </div>
@@ -71,10 +71,11 @@
           <a href="https://goo.gl/maps/UoJXnifdeYrWpg1S6">
             📍Location Map</a>
         </div>
-        <hr>
-        <p>&copy;<span id="year"></span> Akarui Mirai Chamber of Commerce<br>Marychel Calip | WDD 230 Project <br><span id="lastModified"></span></p>
-    </footer>
+        
+        <p class="bottom">&copy;<span id="year"></span> Akarui Chamber | Marychel Calip | WDD 230 Project | Last Modification: <span id ="currentDate"></span></p>
+      </div>
+     
+  </footer>
     <script src="scripts/date.js"></script>
-    <script src="scripts/nav-button.js"></script>
 </body>
 </html>
