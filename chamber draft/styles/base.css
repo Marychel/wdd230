@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+}
+
+:root{
+    font-family: "Merriweather", serif;
+    font-family: "Montserrat", sans-serif;
+
+    --rainbow: linear-gradient(90deg, #845EC2, #E2F4FB, #3C8DA8, #FEFEDF);
+    --color1: #845ec2;
+    --color2: #E2F4FB;
+    --color3: #3C8DA8;
+    --fontcolor: #4B4453;
+    --nav: #FEFEDF;
+  }
+body {
+    margin: 0px;
+    max-width: 100%;
+    background-color: white;
+  }
+  
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: var(--rainbow);
+    margin: 0 auto;
+  }
+
+  
+  .headerfirst {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .akamira {
+    display: flex;
+    flex-direction: column;
+    font-family: "Merriweather" serif;
+    padding: 5px;
+    font-weight: bold;
+  }
+  
+  h1 {
+    font-size: 15px;
+    margin: 0px;
+    font-family: Merriweather;
+  }
+  
+  #smallchamberofcommerce {
+    font-size: 15px;
+    font-family: Merriweather;
+    font-weight: bold;
+  }
+    
+  #currentDate {
+    background-color: var(--nav);
+    padding: 10px;
+    font-size: 20px;
+    width: 100%;
+    margin: 10px;
+    grid-column: 1/4;
+    grid-row: 2;
+  }
+  
+  header,
+  footer {
+    text-align: center;
+    color: black;
+    background-image: var(--rainbow);
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  p,
+  nav,
+  footer {
+    font-size: 16px;
+    font-family: Montserrat;
+  }
+  
+  footer p,
+  footer a {
+    margin: 10px;
+  }
+  
+  footer a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+  main {
+    padding: 10px;
+    margin: 10px;
+    display: grid;
+  }
+  
+  main section {
+    text-align: start;
+    padding: 10px 100px 100px 10px;
+    border: 1px solid black;
+    margin: 5px;
+    background-color: var(--nav);
+  }
+  
+  section.spothlights {
+    padding: 0px;
+  }
+  
+  section.join,
+  section.spothlight3 {
+    display: none;
+  }
+  
+  section.spothlight1,
+  section.spothlight2 {
+    grid-area: auto;
+  }
+  
+  nav button {
+    margin: 0.2rem 2vw;
+    background: transparent;
+    font-size: 2rem;
+    color: white;
+    border: none;
+  }
+  
+  nav ul {
+    display: none;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  nav ul li {
+    list-style-type: none;
+    margin: 0px;
+    padding: 10px;
+  }
+  
+  nav ul li a {
+    display: block;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    padding: 0.5rem 1rem;
+  }
+  
+  nav ul li a:hover {
+    background-color: var(--color1);
+    /*background-color: rgba(0, 0, 0, 0.3);*/
+  }
+  
+  nav ul.open {
+    display: block;
+  }
+  
+  #hamburgerBtn span:nth-child(1) {
+    display: block;
+  }
+  
+  #hamburgerBtn.open span:nth-child(1) {
+    display: none;
+  }
+  
+  #hamburgerBtn span:nth-child(2) {
+    display: none;
+  }
+  
+  #hamburgerBtn.open span:nth-child(2) {
+    display: block;
+  }
+ 
+  
+  hr {
+    border: 0px;
+    width: 95%;
+    background-color: var(--fontcolor);
+    height: 1px;
+  }
+  
+  
+  h1 + p,
+  h1 + p + p {
+    margin: 0px;
+    font-style: italic;
+  }
+  
+  div + h1 {
+    font-size: 22px;
+  }
+
+  .logofooter {
+    width: 40%;
+    height: auto;
+    font-family: Merriweather;
+  }
+  

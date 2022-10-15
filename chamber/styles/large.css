@@ -1,46 +1,22 @@
 @media only screen and (min-width: 60em) {
-    h1 {
-      font-size: 30px;
-      margin: 0px;
+  /*header*/  
+  .navi{
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
-  
-    p,
-    nav,
-    footer {
-      font-size: 16px;
-      font-family: Montserrat;
+    .hamBtn{
+      display: none;
     }
-    div + h1 {
-      font-size: 35px;
-    }
-  
+    /*main*/
     main {
       grid-template-columns: 1fr 2fr 1fr;
       grid-template-rows: repeat(3, 9em);
+      max-width: 950px;
+      margin: auto;
     }
   
-    .headerfirst {
-      display: grid;
-      grid-template-columns: 1fr 1fr 2fr 1fr;
-      width: 100%;
-    }
-  
-    .heading {
-      grid-column: 2/3;
-    }
-  
-    .logo {
-      margin-top: 10px;
-    }
-  
-    #navigation {
-      grid-column: 3/4;
-    }
-    .social {
-      grid-column: 4/5;
-      grid-row: 1;
-    }
-  
+
     section.event {
       grid-column: 1/2;
       grid-row: 1;
@@ -82,17 +58,9 @@
     section.spothlight3 {
       display: inline;
     }
-  
-    nav button {
-      display: none;
-    }
-  
-    nav ul#navigation {
-      display: flex;
-    }
-  
-    nav ul li a {
-      border-bottom: none;
+
+    /*footer*/
+    .foot-container{
+      justify-content: space-around;
     }
   }
-  
