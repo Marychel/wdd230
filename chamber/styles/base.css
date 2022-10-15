@@ -100,7 +100,7 @@ nav ul.open {
   padding: 0.5rem 1rem;
 }
 nav ul li a:hover {
-  background-color: #fe8f28;
+  background-color: var(--color2);
   /*background-color: rgba(0, 0, 0, 0.3);*/
 }
 .navi{
