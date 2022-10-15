@@ -24,4 +24,6 @@ button.addEventListener("click", () => {
 		}); //listBtn.addevent
 	}
 	input.focus();
-}); //button.addevent
+}); 
+
+//button.addevent
