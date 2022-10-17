@@ -37,7 +37,14 @@ header{
     display: flex;
     background-image: var(--rainbow);
     flex-direction: column;
-   
+  }
+
+  #wednesday {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-family: Merriweather;
+    display: block;
   }
 nav{
   display: flex;
@@ -69,7 +76,7 @@ nav{
   margin-left: 10px;
 }
 .company-name h1{
-  font-size: 15px;
+  font-size: 18px;
   font-family: Merriweather;
   margin-bottom: 2px;
 }

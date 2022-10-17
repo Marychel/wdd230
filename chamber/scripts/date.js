@@ -15,9 +15,9 @@ window.onresize = () => {if (window.innerWidth > 760) mnav.classList.remove('ope
 // set banner for monday/tuesday
 let dow = date.getDay();
 if (dow == 1 | dow ==2) {
-    let banner = document.getElementById("banner");
-    banner.style.display = "block";
-    banner.innerText = "🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.";
+    let wednesday = document.getElementById("wednesday");
+    wednesday.style.display = "block";
+    wednesday.innerText = "🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.";
 }
 
 
