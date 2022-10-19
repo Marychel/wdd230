@@ -21,6 +21,7 @@
 
 img{
   max-width: 100%;
+  height: 100%;
 }
 h1,h2,h3,h4{
   font-family: Merriweather;
@@ -144,6 +145,12 @@ main section {
   border: 1px solid black;
   margin: 5px;
   background-color: var(--nav);
+}
+.hero{
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  box-shadow: 5px 5px 10px rgba(70, 69, 69, 0.2);
 }
 
 section.spothlights {
