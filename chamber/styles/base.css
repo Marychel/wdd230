@@ -37,15 +37,14 @@ header{
     display: flex;
     background-image: var(--rainbow);
     flex-direction: column;
-    height: 150px;
+    height: 180px;
   }
-
-  #banner {
+  #banner{
     text-align: center;
-    padding-top: 20px;
-    padding-bottom: 10px;
+    padding: 20px 0 10px 0;
     font-family: Merriweather;
     display: block;
+
   }
 nav{
   display: flex;
@@ -124,11 +123,12 @@ nav ul li a:hover {
 }
 header p.currentDate{
   text-align: center;
-  background-color: var(--nav);
+  background-color: var(--color3);
   padding: 10px;
   font-family: Merriweather, sans serif;
-  color: var(--color2);
+  color: var(--nav);
   font-size: 17px;
+}
 
 /*main*/
 main {
