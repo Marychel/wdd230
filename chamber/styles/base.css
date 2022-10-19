@@ -37,9 +37,10 @@ header{
     display: flex;
     background-image: var(--rainbow);
     flex-direction: column;
+    height: 150px;
   }
 
-  #wednesday {
+  #banner {
     text-align: center;
     padding-top: 20px;
     padding-bottom: 10px;
@@ -125,7 +126,9 @@ header p.currentDate{
   text-align: center;
   background-color: var(--nav);
   padding: 10px;
-}
+  font-family: Merriweather, sans serif;
+  color: var(--color2);
+  font-size: 17px;
 
 /*main*/
 main {
