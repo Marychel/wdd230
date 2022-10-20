@@ -46,7 +46,7 @@ document.querySelector('.currentDate').innerHTML = `${dayName}, ${d.getDate()} $
 document.querySelector('#currentDate').innerHTML = `${dayName}, ${d.getDate()} ${monthName} ${year}`;
 
 // set banner for monday/tuesday
-let dow = date.getDay();
+let dow = d.getDay();
 if (dow == 1 | dow ==2) {
     let banner = document.getElementById("banner");
     banner.style.display = "block";
