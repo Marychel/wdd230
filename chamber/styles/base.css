@@ -152,9 +152,69 @@ main section {
   padding: 10px;
   box-shadow: 5px 5px 10px rgba(70, 69, 69, 0.2);
 }
+/* event css */
+.event {
+  padding: 10px;
+}
+.event h3{
+  font-family: Merriweather;
+  font-size: large;
+  text-align: center;
+}
 
+.event h4 {
+  font-family: Montserrt;
+  font-size: medium;
+  text-align: center;
+}
+.event p {
+  font-family: Lato;
+}
+/*weather css */
+.weather {
+  padding: 10px;
+}
+.weather h3 {
+  font-family: Merriweather;
+  font-size: large;
+  text-align: center;
+}
+
+.weather h4 {
+  font-family: Montserrt;
+  font-size: medium;
+  text-align: center;
+}
+.weather p {
+  font-family: Lato;
+}
+
+/*spotlight1 css*/
+.spotlight1 {
+  padding: 10px;
+  width: 100%;
+
+}
+.spotlight1 h3{
+  font-family: Merriweather;
+  font-size: large;
+  text-align: center;
+}
+
+.spotlight1 h4 {
+  font-family: Montserrt;
+  font-size: medium;
+  text-align: center;
+}
+.spotlight1 p {
+  font-family: Lato;
+}
+
+/*spotlight2*/
+/*spotlight3*/
 section.spothlights {
   padding: 0px;
+  font-family: Lato;
 }
 
 section.join,
@@ -165,6 +225,7 @@ section.spothlight3 {
 section.spothlight1,
 section.spothlight2 {
   grid-area: auto;
+  font-family: Lato;
 }
 
 /*footer*/
