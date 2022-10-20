@@ -11,7 +11,7 @@
     /*main*/
     main {
       grid-template-columns: 1fr 2fr 1fr;
-      grid-template-rows: repeat(3, 9em);
+      /*grid-template-rows: repeat(3, 9em);*/
       max-width: 950px;
       margin: auto;
     }

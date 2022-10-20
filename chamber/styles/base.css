@@ -133,6 +133,7 @@ header p.currentDate{
 
 /*main*/
 main {
+  gap: 10px;
   padding: 10px;
   margin: 10px;
   display: grid;
@@ -143,9 +144,9 @@ main section {
   text-align: start;
 
   /*padding: 10px 100px 100px 10px;*/
-  
+
   border: 1px solid black;
-  margin: 5px;
+  /*margin: 5px;*/
   background-color: var(--nav);
 }
 .hero{
