@@ -147,25 +147,28 @@ section.hero{
 section.hero h2{
   position: absolute;
   top: 30px;
-  left: 20px;
+  left: 50px;
 }
 section.hero div{
   position: absolute;
-  right: 30px;
-  bottom: 30px;
+  right: 15px;
+  bottom: 15px;
   background-color: var(--color3);
   padding: 10px;
   border-radius: 10px;
-  box-shadow: 5px 5px 10px rgb(70 69 69 / 20%);
-  
+  box-shadow: 5px 5px 10px rgb(70 69 69 / 20%); 
 }
+
 section.hero div a{
   text-decoration: none;
   font-weight: bolder;
   font-size: 1.5em;
   font-family: Merriweather;
-  color: var(--nav);
-  
+  color: var(--nav); 
+}
+.action {
+margin-bottom: 15px;
+/*margin-left: 20%;*/
 }
 section.hero div a:hover{
  color: black;

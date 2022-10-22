@@ -8,6 +8,11 @@
     grid-column: 1/3;
     grid-row: 1;
   }
+  section.hero div{
+    position: absolute;
+    right: 30px; 
+    margin-bottom: 10%;
+  }
 
   section.news {
     grid-column: 1/3;

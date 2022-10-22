@@ -15,7 +15,11 @@
       max-width: 950px;
       margin: auto;
     }
-  
+    section.hero div{
+      position: absolute;
+      right: 15px; 
+      margin-bottom: 15%;
+    }
 
     section.event {
       grid-column: 1/2;
