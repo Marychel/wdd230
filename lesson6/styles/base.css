@@ -187,7 +187,7 @@ section.event h4{
 
 }
 section.event p{
-  font-size: .8em;
+  font-size: .9em;
   text-align: center;
 }
 section.event p a{
@@ -263,10 +263,12 @@ section h3{
 }
 .join p{
   margin-top: 10px;
+  font-size: .9em;
 }
 .news p{
   margin-top: 10px;
   margin-bottom: 10px;
+  font-size: .9em;
 }
 .spothlight1, .spothlight2, .spothlight3{
   padding: 15px;
