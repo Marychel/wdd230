@@ -1,4 +1,4 @@
-@media only screen and (min-width: 60em) {
+@media only screen and (min-width: 769px) {
   /*header*/  
   .navi{
       display: flex;
@@ -20,11 +20,15 @@
       right: 15px; 
       margin-bottom: 15%;
     }
+    .hero img {
+      width: 100%;
+    }
 
     section.event {
       grid-column: 1/2;
       grid-row: 1;
     }
+
   
     section.weather {
       grid-column: 1/2;
