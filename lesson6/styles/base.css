@@ -33,6 +33,11 @@ nav, main, .foot-container{
 }
   /*header*/
 
+#banner {
+  text-align: center;
+  background-color: #3C8DA8;
+}
+
 header{
     display: flex;
     background-image: var(--rainbow);
@@ -354,7 +359,7 @@ footer{
 .bottom {
   border-top: 1.5px solid;
   padding: 10px;
-  font-size: 10px;
+  font-size: 15px;
   text-align: center;
   margin-top: 10px;
   width: 100%;
