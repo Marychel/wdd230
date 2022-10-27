@@ -7,28 +7,31 @@
     <meta name="description" content="This is a lazyload by Marychel Calip">
     <title>Lazyload Images</title>
     <link rel="stylesheet" href="styles/style.css">
-    <script defer src="script/script.js"></script>
+    <script defer src="scripts/script.js"></script>
 </head>
 <body>
     <h1>Lazyload Images</h1>
-    <picture>
-        <img src="images/placeholder.jpg" data-src="images/babydogtogether.jpg" width=300 height=400 alt="baby and dog sleeping together">
-    </picture>
-    <picture>
-        <img src="images/placeholder.jpg" data-src="images/groupets.jpg" width=300 height=400 alt="group of dogs with a cat">
-    </picture>
-    <picture>
-        <img src="images/placeholder.jpg" data-src="images/relaxcat.jpg" width=300 height=400 alt="a cat relaxing">
-    </picture>
-    <picture>
-        <img src="images/placeholder.jpg" data-src="images/relaxdog.jpg" width=300 height=400 alt="a dog relaxin">
-    </picture>
-    <picture>
-        <img src="images/placeholder.jpg" data-src="relaxingtogether.jpg" alt="cat and dog relaxing together">
-    </picture>
-    <picture>
-        <img src="images/placeholder.jpg" data-src="sleepingtogether.jpg" width=300 height=400 alt="a dog and a cat sleeping together scenery">
-    </picture>
+    <div class="container">
+        <picture>
+            <img src="images/placeholder.jpg" data-src="images/babydog.jpg" width=300 height=400 alt="baby and dog sleeping together">
+        </picture>
+        <picture>
+            <img src="images/placeholder.jpg" data-src="images/grouppets.jpg" width=300 height=400 alt="group of dogs with a cat">
+        </picture>
+        <picture>
+            <img src="images/placeholder.jpg" data-src="images/relaxcat.jpg" width=300 height=400 alt="a cat relaxing">
+        </picture>
+        <picture>
+            <img src="images/placeholder.jpg" data-src="images/relaxdog.jpg" width=300 height=400 alt="a dog relaxing">
+        </picture>
+        <picture>
+            <img src="images/placeholder.jpg" data-src="images/relaxingtogether.jpg" width=300 height=400 alt="cat and dog relaxing together">
+        </picture>
+        <picture>
+            <img src="images/placeholder.jpg" data-src="images/sleepingtogether.jpg" width=300 height=400 alt="a dog and a cat sleeping together scenery">
+        </picture>
+    </div>
+    
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script>
         WebFont.load({
