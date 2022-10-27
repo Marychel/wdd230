@@ -4,31 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a lazyload by Marychel Calip">
+    <title>Lazyload Images</title>
     <link rel="stylesheet" href="styles/style.css">
-    <script src="./scripts/script.js" defer ></script>
-    <title>Lazy Load</title>
+    <script defer src="scripts/script.js"></script>
 </head>
 <body>
-    <h1>Lazy Load</h1>
+    <h1>Lazyload Images</h1>
     <picture>
-        <img src="./images/placeholder.webp" data-src="images/babydogtogether.webp" width=300 height= 400 alt="babydogtogether" loading="lazy">
+        <img src="images/placeholder.webp" data-src="images/babydogtogether.webp" width= 300 height= 400 alt="baby and dog sleeping together">
     </picture>
-
     <picture>
-        <img src="./images/placeholder.webp" data-src="images/relaxcat.webp" width=300 height= 400 alt="relaxcat" loading="lazy">
+        <img src="images/placeholder.webp" data-src="images/relaxcat.webp" width= 300 height= 400 alt="cat sleeping and relaxing">
     </picture>
-    
     <picture>
-        <img src="./images/placeholder.webp" data-src="images/relaxingtogether.webp" width=300 height= 400 alt="dogcatrelaxingtogether" loading="lazy">
+        <img src="images/placeholder.webp" data-src="images/relaxingtogether.webp" width= 300 height= 400 alt="dog and cat relaxing together">
     </picture>
-
     <picture>
-        <img src="./images/placeholder.webp" data-src="images/sleepingdog.webp" width=300 height= 400 alt="funnysleepingdog" loading="lazy">
+        <img src="images/placeholder.webp" data-src="images/sleepingdog.webp" width= 300 height= 400 alt="sleeping dog funny post">
     </picture>
-
     <picture>
-        <img src="./images/placeholder.webp" data-src="images/sleepingtogether.webp" width=300 height= 400 alt="dogcatsleepingtogether" loading="lazy">
-    </picture> 
-
+        <img src="images/placeholder.webp" data-src="sleepingtogether.webp" width= 300 height= 400 alt="cat and dog sleeping together">
+    </picture>
+    <picture>
+        <img src="images/placeholder.webp" data-src="images/josh-hild.webp" width= 300 height= 400 alt="a path with beautiful autumn scenery">
+    </picture>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+  google: {
+    families: [
+       'Merriweather', 'Montserrat'
+    ]
+  }
+});
+    </script>
 </body>
 </html>
