@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Akarui Mirai Chamber of Commerce</title>
         <meta name="author" content="Marychel Calip">
-        <meta name="description" content="Week 4, Marychel Calip Home Page Build">
+        <meta name="description" content="Week 7, Marychel Calip Discover Page">
         <link rel="icon" type="image/png" sizes="32x32" href="am-logo.svg">
         <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
           <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
@@ -30,7 +30,8 @@
                 </div>
             </div>
             <ul class="navi">
-                <li><a href="">Discover</a></li>
+                <li><a href="index.html" class="uppernavigation"> Home</a></li>
+                <li><a href="discover.html" class="uppernavigation">Discover</a></li>
                 <li><a href="">Directory</a></li>
                 <li><a href="">Join</a></li>
                 <li><a href="">Contact</a></li>
@@ -42,79 +43,56 @@
         </nav>
         <p class="currentDate"></p>
     </header>
-    <main>
-      <section class="hero">
-        <picture>
-          <source srcset="images/small.webp" media="(max-width:425px)">
-          <source srcset="images/medium.webp" media="(min-width:426px) and (max-width:768px)">
-          <source srcset="images/wdd230-org.webp" media="(min-width:769px)">
-          <img src="images/wdd230-org.webp" alt="web230 large">
-      </picture>
-        <h2>Welcome to Akarui Mirai</h2>
-        <div class="action">
-          <a href="#">Join Us!</a>
-        </div>
-      </section>
-        <section class="event">
-          <h3>Information Session</h3>
-        <h4><span>🏫</span>Free Classes for JHS</h4>
-        <p>Grab the opportunity to pursue your education.  For more information, come join at 1:00pm.<a href = "#">more info ...</a>
-        </p>
-        </section>
-        <section class="weather">
-          <h3>Weather</h3>
-        <div class="side_by_side">
-            <img class="spotlight_icon" id="weather_icon" src="images/02d.webp" alt="sunny cloudy">
-            <h4><span id='temperature'>32</span>°F</h4>
-        </div>
-        
-            <h4 id="weather-forecast" class="align_right">Partly Cloudy</h4>
-            <div class="weather-info">
-              <span class="wspeed-label">Wind Speed: </span>
-              <span class="wind_speed">25km/h</span>
-              <span class="wchill-label">Wind Chill: </span>
-              <span class="wind_chill">N/A</span>
-            </div>
-    
-        </section>
-        <section class="join">
-          <div class="contrast_heading"><a href="#">Join Us!</a></div>
-        <p>Discover how to join the chamber of commerce and how it will benefit your organization!</p>
-        </section>
-        <section class="news">
-          <h3>News Release</h3>
-          <p>Mie Prefecture is working to create a regional Japanese language education system based on the "Mie Japanese Language Education Promotion Plan: Toward the Acquisition of Japanese Language for Foreigners as a Lifestyle. 
-          </p>
 
-        </section>
-        <section class="spothlights">
-          <section class="spothlight1">
-            <h3>Odaijini Transport</h3>
-            <span class="spotlight_icon">🚚</span>
-            <p>"We deliver with care!"</p>
-            <hr>
-            <a class="email" href="mailto:odaijini@transport.com">odaijini@transport.com</a>
-            <p>(81)59-223-1234</p>
-          </section>
+   
+    <main class="discoverypage">
+      <div class="demographics">
+        <img src="images/miekencho.webp" alt="Mie Prefecture">
+        <h2>Demographics</h2>
+        <p>The total population of Mie as of October 1, 2021, was 1,750,415, a decrease of 14,839 (0.8%) from the previous year. The percentage of children (under 15 years old) in the total population was 11.8%, the working-age population (15-64 years old) was 56.1%, and the elderly population (65 and over) was 29.8%.
+        </p>
+      </div>
+
+      <div class="visitingmie">
+        <img src="images/mielocation.webp" alt="visiting Mie">
+        <h2>Visiting Mie</h2>
+        <p>The grand panorama of Isewan Bay is magnificent!
+          There is a foot bath at the lookout point, which is grateful for the visitors to get a superb view while having their feet in the bath.You will get a magnificent panoramic view of Isewan Bay and Chubu International Airport.
+          On a clear and sunny day, you will get a distant view of the magnificent mountain ranges of Japan Alps and Mt. Fuji.
+        </p>
+      </div>
+
+      <divs class="historicalshrine">
+        <img src="images/iseshrine.webp" alt="Ise Grand Shrine">
+        <h2>Historical Shrine</h2>
+        <p>The Ise Grand Shrine, or Ise Jingu, located in the heart of a sacred forest in the Mie Prefecture of Japan, is the most important Shinto shrine in the country.  It was first built in 4 BCE, and the present-day structures are based on the buildings erected in the 7th century CE.  The complex, as well as the Uju bridge and torii gateway, are rebuilt every 20 years.  The last renovation was in 2013.  Ise Jingu is the ancestral shrine of the emperors of Japan.
+        </p>
+      </div>
+
+      <divs class="terracericefield">
+        <img src="images/terracerice.webp" alt="Terrace rice field">
+        <h2>Terrace Rice Field</h2>
+        <p>Maruyamasenmaida is chosen as one of the 100 most beautiful terraced rice fields.It is considered as Japan's most beautiful terraced rice field.You could see the different faces through the four seasons.The amazing view from the lookout point will definitely capture the heart of the visitor.There are so many small paddies in multiple layers and the numbers are approximately 1,340.   
+        </p>
+      </div>
+
+        <divs class="matsusakabeef">
+          <img src="images/Matsusaka Beef.webp" alt="Matsusaka Beef">
+          <h2>Meat Lover</h2>
+          <p>When you visit Mie don't miss eating the Matsusaka beef.Matsusaka beef is a brand of beef as famous as Kobe beef.As the good cow with a selected pedigree is raised slowly over a long time, the marbling of the beef becomes so fine that it is called “the art of meat”.The beautifully carved line of the marbled beef will make your heart pound.We recommend you eat them as a "steak" or Sukiyaki so that you can enjoy the smell of the meat.   
+          </p>
+        </div>  
+
+        <divs class="f1carrace">
+          <img src="images/suzukaF1.webp" alt="Suzuka famous f1">
+          <h2>The Motor Cycle Citys</h2>
+          <p>
+            Suzuka is the first city in Japan to proclaim itself a promoting motorsports at the citizen level. The Japan Grand Prix Regional Revitalization Council has been established as a joint effort of 37 organizations including the Japanese government, Mie Prefecture, surrounding cities and towns, as well as tourism, economic, and traffic organizations, and its aim is to provide spectators with a more enjoyable, safe and secure environment to enjoy the races.
+          </p>
   
-          <section class="spothlight2">
-            <h3>Code Primera</h3>
-                  <span class="spotlight_icon">🏫</span>
-                  <p>An after school instruction program.</p>
-                  <hr>
-                  <a class="email" href="mailto:contact@primeracoding.com">contact@primeracoding.com</a>
-                  <p>(81)59-222-2345</p>
-          </section>
-  
-          <section class="spothlight3">
-            <h3>Build A Tree Generation</h3>
-                  <img src="images/tree-house.webp" alt="tree house" width="80" height="80">
-                  <p>Over 1000 plans!</p>
-                  <hr>
-                  <a class="email" href="mailto:builda@treefort.com">builda@treefort.com</a>
-                  <p>(81)59-234-5678</p>
-          </section>
-        </section>
+        </div>    
+
+      
     </main>
     
     <footer>

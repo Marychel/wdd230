@@ -319,6 +319,11 @@ section.spothlight2 {
   height: auto;
   margin-top: 5px;
 }
+
+hr p {
+font-size: .9em;
+} 
+
 /*footer*/
 footer{
   background-image: var(--rainbow);
@@ -364,4 +369,7 @@ footer{
   text-align: center;
   margin-top: 10px;
   width: 100%;
+
+/*style discovery*/
+
 }
