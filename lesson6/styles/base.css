@@ -299,6 +299,8 @@ span.spotlight_icon + p{
 
 section.spothlights {
   padding: 10px;
+  font-size: .9 em;
+  font-family: Montserrat;
 }
 
 
