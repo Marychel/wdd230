@@ -27,6 +27,7 @@ h1,h2,h3,h4{
 }
 p{
   font-family: Montserrat;
+  font-size: .9em;
 }
 nav, main, .foot-container{
   max-width: 900px;
@@ -299,8 +300,6 @@ span.spotlight_icon + p{
 
 section.spothlights {
   padding: 10px;
-  font-size: .9 em;
-  font-family: Montserrat;
 }
 
 
