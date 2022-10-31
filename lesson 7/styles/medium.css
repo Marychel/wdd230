@@ -55,4 +55,14 @@
   p.bottom{
     flex: 0 0 100%;
   }
+  /*discover*/
+  section.discover{
+    flex-direction: row;
+  }
+  section.discover div{
+    width: 50%;
+  }
+  section.discover picture{
+    width: 50%;
+  }
   }

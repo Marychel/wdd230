@@ -5,7 +5,7 @@
     font-family: "Merriweather", serif;
     font-family: "Montserrat", sans-serif;
 
-    --rainbow: linear-gradient(90deg, #845EC2, #E2F4FB, #3C8DA8, #FEFEDF);
+    --rainbow: linear-gradient(90deg,  #845EC2,#3C8DA8, #FEFEDF, #3C8DA8, #845EC2);
     --color1: #845ec2;
     --color2: #E2F4FB;
     --color3: #3C8DA8;
@@ -122,18 +122,22 @@ nav ul li a:hover {
 }
 header p.currentDate{
   text-align: center;
-  background-color: var(--nav);
+  background-image: var(--rainbow);
   padding: 10px;
 }
 
 /*main*/
-main {
+main{
+  margin: auto;
+}
+.container {
   padding: 10px;
   margin: 10px;
   display: grid;
   margin: auto;
   gap: 10px;
 }
+
 
 main section {
   text-align: start;
@@ -372,6 +376,32 @@ footer{
 }
 
 /*style discovery*/
-.discoverypage h3 {
-  margin: 10px;
+section.discover{
+  display: flex;
+  gap: 15px;
+  margin: 15px;
+  border: 1px solid gray;
+  flex-direction: column;
+}
+section.discover div{
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+section.discover div h2{
+  margin-bottom: 25px;
+}
+section.discover picture{
+  padding: 15px;
+  
+}
+.localstorage{
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 10px;
+  font-family: Merriweather;
+  background-color: var(--color3);
 }
