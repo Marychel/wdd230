@@ -1,7 +1,6 @@
 @media only screen and (min-width: 426px) {
-  main {
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: repeat(5, 0fr);
+  .container {
+    grid-template-columns: 1fr 1fr;
   }
 
   section.hero {
@@ -22,6 +21,7 @@
   .spothlights {
     display: flex;
     grid-column: 1/-1;
+    gap: 10px;
   }
   section.spothlight1 {
     width: 50%;
