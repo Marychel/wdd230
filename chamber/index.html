@@ -7,7 +7,7 @@
         <title>Akarui Mirai Chamber of Commerce</title>
         <meta name="author" content="Marychel Calip">
         <meta name="description" content="Week 4, Marychel Calip Home Page Build">
-        <link rel="icon" type="image/svg" sizes="48x48" href="images/am-logo.svg">
+        <link rel="icon" type="image/png" sizes="32x32" href="am-logo.svg">
         <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
           <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
           <link rel="stylesheet" href="styles/normalize.css">
@@ -16,14 +16,14 @@
           <link rel="stylesheet" href="styles/large.css">
       
       </head>
-<body>
-    <header>
-      <div id="banner">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</div>
 
+<body>
+  <p id="banner"></p>
+    <header>
         <nav>
             <button class="hamBtn"><span>&#9776;</span><span>&#10006;</span></button>
             <div class="logo">
-                <img src="images/am-logo.svg" alt="">
+                <img src="images/am-logo.webp" alt="">
                 <div class="company-name">
                     <h1>Akarui Mirai</h1>
                     <p>Chamber of Commerce</p>
@@ -36,115 +36,110 @@
                 <li><a href="">Contact</a></li>
             </ul>
             <div class="social">
-                <img src="images/facebook.svg" alt="facebook icon">
-                <img src="images/linkedin.svg" alt="linkedin icon">
+                <img src="images/facebook.webp" alt="facebook icon">
+                <img src="images/linked.webp" alt="linkedin icon">
             </div>
         </nav>
         <p class="currentDate"></p>
     </header>
-
     <main>
-        <section class="hero">
-          <img src="images/toba.png" alt="pictureoftoba">
+      <section class="hero">
+        <picture>
+          <source srcset="images/small.webp" media="(max-width:425px)">
+          <source srcset="images/medium.webp" media="(min-width:426px) and (max-width:768px)">
+          <source srcset="images/wdd230-org.webp" media="(min-width:769px)">
+          <img src="images/wdd230-org.webp" alt="web230 large">
+      </picture>
+        <h2>Welcome to Akarui Mirai</h2>
+        <div class="action">
+          <a href="#">Join Us!</a>
+        </div>
       </section>
-      <section class="event">
-        <h3>Information Session</h3>
+        <section class="event">
+          <h3>Information Session</h3>
         <h4><span>🏫</span>Free Classes for JHS</h4>
         <p>Grab the opportunity to pursue your education.  For more information, come join at 1:00pm.<a href = "#">more info ...</a>
         </p>
-      </section>
-      <section class="weather">
-        <h3>Weather</h3>
+        </section>
+        <section class="weather">
+          <h3>Weather</h3>
         <div class="side_by_side">
-            <span class="spotlight_icon" id="weather_icon">⛅</span>
+            <img class="spotlight_icon" id="weather_icon" src="images/02d.webp" alt="sunny cloudy">
             <h4><span id='temperature'>32</span>°F</h4>
         </div>
-        <div id="weather_forecast">
-            <h4 class="align_right">
-                <span id="forecast">Partly Cloudy</span>
-            </h4>
-            <hr>
-        </div>
-            <div id="weather_table">
-            <table class="center">
-                <tr>
-                    <td><p>Wind Speed:</p></td>
-                    <td><p><span id='wind_speed'>20</span> mph</p></td>
-                </tr>
-                <tr>
-                    <td><p>Wind Chill:</p></td>
-                    <td><p><span id='wind_chill'>N/A</span></p></td>
-                </tr>
-            </table>
-        </div>
-      </section>
-      <section class="join">
-        <div class="contrast_heading"><a href="#">Join Us!</a></div>
+        
+            <h4 id="weather-forecast" class="align_right">Partly Cloudy</h4>
+            <div class="weather-info">
+              <span class="wspeed-label">Wind Speed: </span>
+              <span class="wind_speed">25km/h</span>
+              <span class="wchill-label">Wind Chill: </span>
+              <span class="wind_chill">N/A</span>
+            </div>
+    
+        </section>
+        <section class="join">
+          <div class="contrast_heading"><a href="#">Join Us!</a></div>
         <p>Discover how to join the chamber of commerce and how it will benefit your organization!</p>
-    </div>
-
-      </section>
-      <section class="news">
-        <h3>News Release</h3>
-          <p>Spicy jalapeno bacon ipsum dolor amet capicola ut pastrami biltong cow pork belly. 
-              Pork belly shankle ea, sint tongue beef consectetur eiusmod do ribeye nisi dolore. 
-              Deserunt ribeye biltong aliqua tail, buffalo aute ground round id ham hock quis eu. 
-              </p>
-      </section>
-      <section class="spothlights">
-        <section class="spothlight1">
-          <h3>Thankful Transport</h3>
-          <span class="spotlight_icon">🚚</span>
-          <p>"We get it there for you!"</p>
-          <hr>
-          <a href="mailto:hello@thankfultransport.com">hello@thankfultransport.com</a>
-          <p>(253)555-2121</p>
         </section>
+        <section class="news">
+          <h3>News Release</h3>
+          <p>Mie Prefecture is working to create a regional Japanese language education system based on the "Mie Japanese Language Education Promotion Plan: Toward the Acquisition of Japanese Language for Foreigners as a Lifestyle. 
+          </p>
 
-        <section class="spothlight2">
-          <h3>Code Primera</h3>
-                <span class="spotlight_icon">🏫</span>
-                <p>An after school instruction program.</p>
-                <hr>
-                <a href="mailto:contact@primeracoding.com">contact@primeracoding.com</a>
-                <p>(253)555-2222</p>
         </section>
-
-        <section class="spothlight3">
-          <h3>Build A Treefort</h3>
-                <img src="images/tree_house_80.png" alt="tree house" width="80" height="80">
-                <p>Over 1000 plans!</p>
-                <hr>
-                <a href="mailto:builda@treefort.com">builda@treefort.com</a>
-                <p>(253)555-3333</p>
+        <section class="spothlights">
+          <section class="spothlight1">
+            <h3>Odaijini Transport</h3>
+            <span class="spotlight_icon">🚚</span>
+            <p>"We deliver with care!"</p>
+            <hr>
+            <a class="email" href="mailto:odaijini@transport.com">odaijini@transport.com</a>
+            <p>(81)59-223-1234</p>
+          </section>
+  
+          <section class="spothlight2">
+            <h3>Ippo Class</h3>
+                  <span class="spotlight_icon">🏫</span>
+                  <p>A Japanese school program for foreign new-comer students.</p>
+                  <hr>
+                  <a class="email" href="mailto:contact@ippo.com">contact@ippo.com</a>
+                  <p>(81)59-222-2345</p>
+          </section>
+  
+          <section class="spothlight3">
+            <h3>Tree For Life</h3>
+                  <img src="images/tree-house.webp" alt="tree house" width="80" height="80">
+                  <p>Over 1000 plans!</p>
+                  <hr>
+                  <a class="email" href="mailto:builda@treefort.com">builda@treefort.com</a>
+                  <p>(81)59-234-5678</p>
+          </section>
         </section>
-      
-      </section>
-
     </main>
     
     <footer>
       <div class="foot-container">
         <div class="logofooter">
-          <img src="images/am-logo.svg" alt="akarui-mirai-logo">
+          <img src="images/am-logo.webp" alt="akarui-mirai-logo">
         </div>
         <div class="locationinfo">
-          <h3>Akarui Mirai Chamber of Commerce</h3> 
+          <h3>Akarui Mirai Chamber of Commerce</h3>
           <p>Shiratsuka Eki</p>
           <p>Tsu Mie Japan 514-0101</p>
         </div>
         <div class="info">
           <p>info@akaruimirai.com</p>
-          <p>+(81) 123-4567-8910</p>
+          <p>+(81) 81-123-4567-8910</p>
           
           <a href="https://goo.gl/maps/UoJXnifdeYrWpg1S6">
             📍Location Map</a>
         </div>
         
-        <p class="bottom">&copy;<span id="year"></span> Akarui Chamber | Marychel Calip | WDD 230 Project | Last Modification: <span id ="currentDate"></span></p>
+        <p class="bottom">&copy;<span id="year"></span> Akarui Chamber | Marychel Calip | WDD 230 Project |  <span id ="lastModif"></span></p>
       </div>
      
   </footer>
     <script src="scripts/date.js"></script>
+    <script src="scripts/windchill.js"></script>
 </body>
 </html>

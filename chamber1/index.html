@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Akarui Mirai Chamber of Commerce</title>
+        <meta name="author" content="Marychel Calip">
+        <meta name="description" content="Week 4, Marychel Calip Home Page Build">
+        <link rel="icon" type="image/svg" sizes="48x48" href="images/am-logo.svg">
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+          <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+          <link rel="stylesheet" href="styles/normalize.css">
+          <link rel="stylesheet" href="styles/base.css">
+          <link rel="stylesheet" href="styles/medium.css">
+          <link rel="stylesheet" href="styles/large.css">
+      
+      </head>
+<body>
+    <header>
+      <div id="banner">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</div>
+
+        <nav>
+            <button class="hamBtn"><span>&#9776;</span><span>&#10006;</span></button>
+            <div class="logo">
+                <img src="images/am-logo.svg" alt="">
+                <div class="company-name">
+                    <h1>Akarui Mirai</h1>
+                    <p>Chamber of Commerce</p>
+                </div>
+            </div>
+            <ul class="navi">
+                <li><a href="">Discover</a></li>
+                <li><a href="">Directory</a></li>
+                <li><a href="">Join</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+            <div class="social">
+                <img src="images/facebook.svg" alt="facebook icon">
+                <img src="images/linkedin.svg" alt="linkedin icon">
+            </div>
+        </nav>
+        <p class="currentDate"></p>
+    </header>
+
+    <main>
+        <section class="hero">
+          <img src="images/toba.png" alt="pictureoftoba">
+      </section>
+      <section class="event">
+        <h3>Information Session</h3>
+        <h4><span>🏫</span>Free Classes for JHS</h4>
+        <p>Grab the opportunity to pursue your education.  For more information, come join at 1:00pm.<a href = "#">more info ...</a>
+        </p>
+      </section>
+      <section class="weather">
+        <h3>Weather</h3>
+        <div class="side_by_side">
+            <span class="spotlight_icon" id="weather_icon">⛅</span>
+            <h4><span id='temperature'>32</span>°F</h4>
+        </div>
+        <div id="weather_forecast">
+            <h4 class="align_right">
+                <span id="forecast">Partly Cloudy</span>
+            </h4>
+            <hr>
+        </div>
+            <div id="weather_table">
+            <table class="center">
+                <tr>
+                    <td><p>Wind Speed:</p></td>
+                    <td><p><span id='wind_speed'>20</span> mph</p></td>
+                </tr>
+                <tr>
+                    <td><p>Wind Chill:</p></td>
+                    <td><p><span id='wind_chill'>N/A</span></p></td>
+                </tr>
+            </table>
+        </div>
+      </section>
+      <section class="join">
+        <div class="contrast_heading"><a href="#">Join Us!</a></div>
+        <p>Discover how to join the chamber of commerce and how it will benefit your organization!</p>
+    </div>
+
+      </section>
+      <section class="news">
+        <h3>News Release</h3>
+          <p>Spicy jalapeno bacon ipsum dolor amet capicola ut pastrami biltong cow pork belly. 
+              Pork belly shankle ea, sint tongue beef consectetur eiusmod do ribeye nisi dolore. 
+              Deserunt ribeye biltong aliqua tail, buffalo aute ground round id ham hock quis eu. 
+              </p>
+      </section>
+      <section class="spothlights">
+        <section class="spothlight1">
+          <h3>Thankful Transport</h3>
+          <span class="spotlight_icon">🚚</span>
+          <p>"We get it there for you!"</p>
+          <hr>
+          <a href="mailto:hello@thankfultransport.com">hello@thankfultransport.com</a>
+          <p>(253)555-2121</p>
+        </section>
+
+        <section class="spothlight2">
+          <h3>Code Primera</h3>
+                <span class="spotlight_icon">🏫</span>
+                <p>An after school instruction program.</p>
+                <hr>
+                <a href="mailto:contact@primeracoding.com">contact@primeracoding.com</a>
+                <p>(253)555-2222</p>
+        </section>
+
+        <section class="spothlight3">
+          <h3>Build A Treefort</h3>
+                <img src="images/tree_house_80.png" alt="tree house" width="80" height="80">
+                <p>Over 1000 plans!</p>
+                <hr>
+                <a href="mailto:builda@treefort.com">builda@treefort.com</a>
+                <p>(253)555-3333</p>
+        </section>
+      
+      </section>
+
+    </main>
+    
+    <footer>
+      <div class="foot-container">
+        <div class="logofooter">
+          <img src="images/am-logo.svg" alt="akarui-mirai-logo">
+        </div>
+        <div class="locationinfo">
+          <h3>Akarui Mirai Chamber of Commerce</h3> 
+          <p>Shiratsuka Eki</p>
+          <p>Tsu Mie Japan 514-0101</p>
+        </div>
+        <div class="info">
+          <p>info@akaruimirai.com</p>
+          <p>+(81) 123-4567-8910</p>
+          
+          <a href="https://goo.gl/maps/UoJXnifdeYrWpg1S6">
+            📍Location Map</a>
+        </div>
+        
+        <p class="bottom">&copy;<span id="year"></span> Akarui Chamber | Marychel Calip | WDD 230 Project | Last Modification: <span id ="currentDate"></span></p>
+      </div>
+     
+  </footer>
+    <script src="scripts/date.js"></script>
+</body>
+</html>
