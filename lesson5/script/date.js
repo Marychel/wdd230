@@ -43,12 +43,13 @@ let dayName = day[d.getDay()];
 let monthName = month[d.getMonth()];
 let year = d.getFullYear();
 document.querySelector('.currentDate').innerHTML = `${dayName}, ${d.getDate()} ${monthName} ${year}`;
-document.querySelector('#currentDate').innerHTML = `${dayName}, ${d.getDate()} ${monthName} ${year}`;
+document.querySelector('#lastModif').innerHTML = `Last Updated: ${document.lastModified}`;
 
 // set banner for monday/tuesday
 let dow = d.getDay();
-if (dow == 1 | dow ==2) {
+if (dow == 1 || dow ==2) {
     let banner = document.getElementById("banner");
-    banner.style.display = "block";
+    banner.style.display = "block"; 
+    banner.style.padding="10px"
     banner.innerText = "🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.";
 }

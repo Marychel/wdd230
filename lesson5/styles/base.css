@@ -39,6 +39,11 @@ header{
     flex-direction: column;
    
   }
+#banner {
+  text-align: center;
+  background-color: #3C8DA8;
+}
+
 nav{
   display: flex;
   max-width: 900px;
