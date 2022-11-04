@@ -11,7 +11,6 @@
           --shadow: #808080;
           --zebra: #4B4453;
         }
-}
    
    table {
      margin: 10px auto;
@@ -24,7 +23,7 @@
      padding: 10px;
      caption-side: bottom;
      color: var(--back);
-     font-size: 0.85rem;
+     font-size: 1rem;
    }
    
    th,
@@ -42,7 +41,8 @@
    }
    
    tbody tr:nth-child(even) {
-     background-color: var(--zebra);
+     background-color: var(--zebra); 
+     color: aliceblue;
    }
    
    td:hover {
@@ -53,4 +53,8 @@
    .highlight {
      background-color: var(--back);
      color: var(--forelight);
+   }
+
+   .highlight {
+     background-color: aquamarine;
    }
