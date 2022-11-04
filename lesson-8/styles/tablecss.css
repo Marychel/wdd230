@@ -6,8 +6,8 @@
           --back2: #845ec2;
           --foredark: #3C8DA8;
           --forelight: #3C8DA8;
-          --border: #333;
-          --borderlight: #545454;
+          --border: rgb(111, 120, 195);
+          --borderlight: hsl(0, 93%, 51%);
           --shadow: #808080;
           --zebra: #4B4453;
         }
