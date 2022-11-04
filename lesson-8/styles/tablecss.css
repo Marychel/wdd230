@@ -1,13 +1,17 @@
-:root {
-     --back: #26734d;
-     --back2: #26734d80;
-     --foredark: #1a1a1a;
-     --forelight: #fff;
-     --border: #333;
-     --borderlight: #545454;
-     --shadow: #808080;
-     --zebra: #ededed;
-   }
+:root{
+     font-family: "Merriweather", serif;
+     font-family: "Montserrat", sans-serif;
+     
+          --back: #4B4453;
+          --back2: #845ec2;
+          --foredark: #3C8DA8;
+          --forelight: #3C8DA8;
+          --border: #333;
+          --borderlight: #545454;
+          --shadow: #808080;
+          --zebra: #4B4453;
+        }
+}
    
    table {
      margin: 10px auto;
