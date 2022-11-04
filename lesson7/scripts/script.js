@@ -64,14 +64,8 @@ let day;
   }else{
     day = "day"
   }
-let message;
- if (result >= 1 && numVisits >= 1){
-  message = `You have visited this page for ${numVisits} times. It's been ${result} ${day} since your last visit.`; 
- }else if(result == 0 && numVisits >= 1){
-  message = `Welcome to Akarui Mirai! You have visited this page for ${numVisits} times. `;}
- else{
-  message = "Welcome to Akarui Mirai!"
- }
+let message=`You have visited this page for ${numVisits} times. It's been ${result} ${day} since your last visit.`;
+
 localStorage.setItem("last-visit", currentDateInMilli);
 document.querySelector('.localstorage').innerHTML = message;
 
