@@ -1,0 +1,52 @@
+:root {
+     --back: #26734d;
+     --back2: #26734d80;
+     --foredark: #1a1a1a;
+     --forelight: #fff;
+     --border: #333;
+     --borderlight: #545454;
+     --shadow: #808080;
+     --zebra: #ededed;
+   }
+   
+   table {
+     margin: 10px auto;
+     border: thin solid var(--border);
+     box-shadow: 0 0 30px var(--shadow);
+     border-collapse: collapse;
+   }
+   
+   caption {
+     padding: 10px;
+     caption-side: bottom;
+     color: var(--back);
+     font-size: 0.85rem;
+   }
+   
+   th,
+   td {
+     padding: 7px 15px;
+     border: 1px solid var(--borderlight);
+   }
+   
+   th {
+     background-color: var(--back2);
+   }
+   
+   td {
+     text-align: center;
+   }
+   
+   tbody tr:nth-child(even) {
+     background-color: var(--zebra);
+   }
+   
+   td:hover {
+     background-color: var(--back2);
+   }
+   
+   tr:first-child th,
+   .highlight {
+     background-color: var(--back);
+     color: var(--forelight);
+   }

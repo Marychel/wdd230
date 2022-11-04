@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a practice of making table in html.">
+    <title>Table Build</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="css/tablecss.css">
+</head>
+<body>
+    <table>
+     <caption>Table 1: Wasatch Sales</caption>
+        <thead>
+            <tr>
+                <th colspan="2" scope="colgroup">Sales</th>
+            </tr>
+            <tr>
+                <th scope="col">Month</th>
+                <th scope="col">Amount</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>July</td>
+                <td>3,000</td>
+            </tr>
+            <tr>
+                <td>August</td>
+                <td class="highlight">8,000</td>
+            </tr>
+            <tr>
+                <td>September</td>
+                <td>4,000</td>
+            </tr>
+            <tr>
+                <td>October</td>
+                <td>3,000</td>
+            </tr>
+            <tr>
+                <td>November</td>
+                <td>2,000</td>
+            </tr>
+        </tbody>
+        
+    </table>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script>
+    WebFont.load({
+google: {
+families: [
+   'Ubuntu', 'sans-serif'
+]
+}
+});
+</script>
+</body>
+</html>
