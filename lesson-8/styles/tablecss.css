@@ -17,6 +17,7 @@
      border: thin solid var(--border);
      box-shadow: 0 0 30px var(--shadow);
      border-collapse: collapse;
+     width: 500px;
    }
    
    caption {
