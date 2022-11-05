@@ -39,34 +39,33 @@ const imgObserver = new IntersectionObserver((entries, imgObserver) => {
 //display message to the user or welcome message
 
 const currentDateInMilli =Date.now();
-const lastDate = localStorage.getItem("last-visit");
-
+const lastDate = Number(window.localStorage.getItem("last-visit"));
 let numVisits = Number(window.localStorage.getItem("visits-ls"));
-
-
 // increment the number of visits.
 numVisits++;
 // store the new number of visits value
 localStorage.setItem("visits-ls", numVisits);
 
-if (lastDate === undefined){
-    localStorage.setItem("last-visit", currentDateInMilli);
+if (lastDate == undefined){
+  localStorage.setItem("last-visit", currentDateInMilli);
+  
 }else{
- 
-const ld = parseFloat(lastDate);
+  const ld = parseFloat(lastDate);
+  const days_ago = (currentDateInMilli - ld) / 86400000;
+  result = days_ago.toFixed(0); 
+}
 
-const days_ago = (currentDateInMilli - ld) / 86400000;
-const result = days_ago.toFixed(0);
 
-let day;
-  if (result > 1){
+
+
+if (result > 1){
     day = "days"
-  }else{
+}else{
     day = "day"
   }
-let message=`You have visited this page for ${numVisits} times. It's been ${result} ${day} since your last visit.`;
 
+if (numVisits == 1 ){
+  message = "This is your first time in this page."; 
+}else{message = `You have visited this page for ${numVisits} times. It's been ${result} ${day} since your last visit.`;}
 localStorage.setItem("last-visit", currentDateInMilli);
 document.querySelector('.localstorage').innerHTML = message;
-
-}
