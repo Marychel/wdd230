@@ -1,16 +1,12 @@
-@media only screen and (min-width: 426px) {
+@media only screen and (min-width: 27em) {
   .container {
     grid-template-columns: 1fr 1fr;
+    /*grid-template-rows: repeat(5, 0fr);*/
   }
 
   section.hero {
     grid-column: 1/3;
     grid-row: 1;
-  }
-  section.hero div{
-    position: absolute;
-    right: 30px; 
-    margin-bottom: 10%;
   }
 
   section.news {
@@ -64,5 +60,22 @@
   }
   section.discover picture{
     width: 50%;
+  }
+
+  /*join*/
+  main.center {
+    max-width: max-content;
+    justify-content: space-evenly;
+  }
+  .form{
+    width: 50%;
+  }
+  .hide-base {
+    display: block;
+  }
+
+  .member-list a.member-email {
+    display: block;
+    width: 230px;
   }
   }
