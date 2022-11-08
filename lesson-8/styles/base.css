@@ -405,7 +405,7 @@ form div {
   display: block;
   padding-top: 1rem;
   color: black;
-  font-size: 0.8rem;
+  font-size: 16px;
 }
 
 form label.top input,
@@ -464,21 +464,22 @@ h2.center {
 }
 
 #bronze-level {
-  background-color: rgb(208, 127, 22);
+  background-color: var(--fontcolor);
+  color: #ebe8e7;
 }
 
 #silver-level {
-  background-color: var(--color3)
+  background-color: #05698b;
   color: white;
   
 }
 
 #gold-level {
-  background-color: var(--color1);
+  background-color: #464b73;
   color: var(--color2);
 }
 
-.color-box {
+.membership {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -489,6 +490,7 @@ h2.center {
   border-radius: 5em;
   text-align: center;
   font-weight: bolder;
+  font-size: 30px;
   transition: 1s;
   transition-timing-function: ease;
 }
@@ -502,16 +504,16 @@ h2.center {
   100% { opacity: 1; }
 }
 
-div.color-box div,
-div.color-box:hover div {
+div.membership div,
+div.membership:hover div {
   animation: appear 2s ease;
 }
 
-div.color-box div:nth-child(1) {
+div.membership div:nth-child(1) {
   display: block;
 }
 
-div.color-box div:nth-child(2) {
+div.membership div:nth-child(2) {
   display: none;
 }
 
@@ -523,11 +525,11 @@ div.top-header button span:nth-child(2) {
   display: none;
 }
 
-div.color-box:hover div:nth-child(2) {
+div.membership:hover div:nth-child(2) {
   display: block;
 }
 
-div.color-box:hover div:nth-child(1) {
+div.membership:hover div:nth-child(1) {
   display: none;
 }
 
@@ -539,14 +541,14 @@ div.top-header button.open span:nth-child(1) {
   display: none;
 }
 
-div.color-box li {
+div.membership li {
   font-size: smaller;
   font-weight: 400;
   text-align: left;
   padding: 2px;
 }
 
-div.color-box ul {
+div.membership ul {
   padding-inline-start: 20px;
 }
 
