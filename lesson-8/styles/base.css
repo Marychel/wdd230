@@ -436,10 +436,11 @@ form input.submit-btn {
   margin: 0 0 2rem 2%;
   width: 96%;
   max-width: 20rem;
+  font-size: 20px;
 }
 
 form input.submit-btn:hover {
-  background-color: #ebe8e7;
+  background-color: var(--color1);
   color: black;
   cursor: pointer;
 }
@@ -573,4 +574,11 @@ div.membership ul {
 
 .description-text{
   width: 100%;
+}
+
+.thankyou {
+  padding: 40px;
+  margin: 3%;
+  text-align: center;
+  background-image: var(--rainbow);
 }
