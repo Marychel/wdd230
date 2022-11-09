@@ -488,7 +488,7 @@ h2.center {
   border-radius: 5em;
   text-align: center;
   font-weight: bolder;
-  font-size: 30px;
+  font-size: 20px;
   transition: 1s;
   transition-timing-function: ease;
 }
@@ -540,7 +540,7 @@ div.top-header button.open span:nth-child(1) {
 }
 
 div.membership li {
-  font-size: smaller;
+  font-size: 10px;
   font-weight: 400;
   text-align: left;
   padding: 2px;
