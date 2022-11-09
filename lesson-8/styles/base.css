@@ -445,9 +445,6 @@ form input.submit-btn:hover {
   cursor: pointer;
 }
 
-
-
-
 form label.top input:required:valid {
   border-left: green solid 6px;
 }
