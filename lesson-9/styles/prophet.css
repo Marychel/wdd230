@@ -1,0 +1,79 @@
+*{
+    box-sizing: border-box;
+   
+}
+body{
+    max-width: 1048px;
+    margin: 0 auto;
+    
+}
+main{
+    margin: 0 auto;
+}
+img{
+    width: 100%;
+    padding: 10px;
+    overflow: hidden;
+    height: 320px;
+    object-fit: cover;
+}
+.cards{
+   display: grid;
+   grid-template-columns: 1fr;
+   place-self: center;
+   
+
+  
+}
+h2{
+    font-size: 1.15rem;
+}
+section{
+    background-image: linear-gradient(90deg,  #845EC2,#3C8DA8, #FEFEDF, #3C8DA8, #845EC2);
+    margin: 10px;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(70, 69, 69, 0.4);
+  
+}
+
+section img[data-src] {
+    filter: blur(0.2em);
+  }
+  
+section img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+  }
+
+h1, h2{
+    font-family: 'Merriweather', serif;
+    text-align: center;
+    
+}
+p{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    font-size: .75rem;
+}
+footer{
+    background-image: linear-gradient(90deg,  #845EC2,#3C8DA8, #FEFEDF, #3C8DA8, #845EC2);
+    text-align: center;
+    padding: 20px;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+}
+@media only screen and (min-width: 32.5em){
+    .cards{
+        grid-template-columns: 1fr 1fr;
+    }
+
+ 
+}
+@media only screen and (min-width:769px){
+    .cards{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
