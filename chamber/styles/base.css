@@ -467,18 +467,18 @@ h2.center {
 
 #bronze-level {
   background-color: var(--fontcolor);
-  color: #ebe8e7;
+  color: goldenrod;
 }
 
 #silver-level {
   background-color: #05698b;
-  color: white;
+  color: silver;
   
 }
 
 #gold-level {
   background-color: #464b73;
-  color: var(--color2);
+  color: gold;
 }
 
 .membership {
