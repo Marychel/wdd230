@@ -1,0 +1,61 @@
+:root{
+     font-family: "Merriweather", serif;
+     font-family: "Montserrat", sans-serif;
+     
+          --back: #4B4453;
+          --back2: #845ec2;
+          --foredark: #3C8DA8;
+          --forelight: #3C8DA8;
+          --border: rgb(111, 120, 195);
+          --borderlight: hsl(0, 93%, 51%);
+          --shadow: #808080;
+          --zebra: #4B4453;
+        }
+   
+   table {
+     margin: 10px auto;
+     border: thin solid var(--border);
+     box-shadow: 0 0 30px var(--shadow);
+     border-collapse: collapse;
+     width: 500px;
+   }
+   
+   caption {
+     padding: 10px;
+     caption-side: bottom;
+     color: var(--back);
+     font-size: 1rem;
+   }
+   
+   th,
+   td {
+     padding: 7px 15px;
+     border: 1px solid var(--borderlight);
+   }
+   
+   th {
+     background-color: var(--back2);
+   }
+   
+   td {
+     text-align: center;
+   }
+   
+   tbody tr:nth-child(even) {
+     background-color: var(--zebra); 
+     color: aliceblue;
+   }
+   
+   td:hover {
+     background-color: var(--back2);
+   }
+   
+   tr:first-child th,
+   .highlight {
+     background-color: var(--back);
+     color: var(--forelight);
+   }
+
+   .highlight {
+     background-color: aquamarine;
+   }

@@ -9,7 +9,7 @@
       display: none;
     }
     /*main*/
-    main {
+    .container {
       grid-template-columns: 1fr 2fr 1fr;
       grid-template-rows: 1fr 1fr 1fr;
       max-width: 950px;
@@ -71,5 +71,18 @@
     /*footer*/
     .foot-container{
       justify-content: space-around;
+    }
+
+    .member-list p.member-address {
+      order: 5;
+      display: block;
+      width: 300px;
+    }
+  
+    div.member-list img {
+      order: 6;
+      display: block;
+      height: 40px;
+      width: auto;
     }
   }

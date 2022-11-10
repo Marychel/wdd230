@@ -47,7 +47,7 @@ document.getElementById("lastModif").innerHTML = `Last Updated:  ${document.last
 
 // set banner for monday/tuesday
 let dow = d.getDay();
-if (dow == 1 || dow ==2) {
+if (dow == 1 | dow ==2) {
     document.getElementById("banner").style.display = "block";
     document.getElementById("banner").style.padding = "10px";
     banner.innerText = "🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.";

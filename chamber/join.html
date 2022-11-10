@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Akarui Mirai Chamber of Commerce</title>
+        <meta name="author" content="Marychel Calip">
+        <meta name="description" content="Week 7, Marychel Calip Discover Page">
+        <link rel="icon" type="image/png" sizes="32x32" href="am-logo.svg">
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+          <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+          <link rel="stylesheet" href="styles/normalize.css">
+          <link rel="stylesheet" href="styles/base.css">
+          <link rel="stylesheet" href="styles/medium.css">
+          <link rel="stylesheet" href="styles/large.css">
+      
+      </head>
+
+<body>
+  <p id="banner"></p>
+    <header>
+        <nav>
+            <button class="hamBtn"><span>&#9776;</span><span>&#10006;</span></button>
+            <div class="logo">
+                <img src="images/am-logo.webp" alt="">
+                <div class="company-name">
+                    <h1>Akarui Mirai</h1>
+                    <p>Chamber of Commerce</p>
+                </div>
+            </div>
+            <ul class="navi">
+                <li><a href="index.html"> Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+            <div class="social">
+                <img src="images/facebook.webp" alt="facebook icon">
+                <img src="images/linked.webp" alt="linkedin icon">
+            </div>
+        </nav>
+        <p class="currentDate"></p>
+     </header>
+
+     <main>
+          <div class="background-fill stacked">
+               <h2 class="center">Akarui Mirai Chamber of Commerce</h2>
+   
+               <div class="background-fill sxs">
+                <div class="hide-base">
+                    <div class="membership" id="gold-level">
+                        <div>Gold <br>Membership</div>
+                        <div>
+                            Gold Benefits
+                            <ul>
+                                <li>Big discounts on all accredited companies</li>
+                                <li>Free promotional business ads</li>
+                                <li>VIP Accommodation</li>
+                                <li>Free financial consultation</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="membership" id="silver-level">
+                        <div>Silver <br>Membership</div>
+                        <div>
+                            Silver Benefits
+                            <ul>
+                                <li>Discounts on some of our accredited companies</li>
+                                <li>Discounted amount for promotional business</li>
+                                <li>Limited discounts on some hotels</li>
+                                <li>Category banner</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="membership" id="bronze-level">
+                        <div>Bronze <br>Membership</div>
+                        <div>
+                            Bronze Benefits
+                            <ul>
+                                <li>Chamber directory listing</li>
+                                <li>Relay conference access</li>
+                                <li>Chamber email list access</li>
+                                <li>Membership recognition</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                   <div class="form">
+                       <form method="get" action="thankyou.html">
+                           <fieldset>
+                               <legend>Tell us more.</legend>
+                               <label class="top">First Name* <input type="text" name="fname" required /></label>
+                               <label class="top">Last Name* <input type="text" name="lname" required /></label>
+                               <label class="top">Business position/title
+                                   <input type="text" pattern="[A-Za-z\- ]{7,}" name="position" /></label>
+                               <label class="top">Email*
+                                   <input type="email" name="email" placeholder="akaruimirai@gmail.com" required /></label>
+                               <label class="top">Business Contact number*
+                                   <input type="tel" name="cell_phone" placeholder="0591234345" required /></label>
+                               <label class="top">Company name*
+                                   <input type="text" name="business_title" required /></label>
+                               <label class="top">Business description<textarea class="description-text" rows="4" cols="20"
+                                       name="business_description"></textarea>
+                               </label>
+                           </fieldset>
+   
+                           <fieldset>
+                               <legend>Membership Level</legend>
+                               <label class="sbs"><input type="radio" name="audience" value="np" required />
+                                   Non-profit</label>
+                               <label class="sbs"><input type="radio" name="audience" value="bronze" />
+                                   Bronze</label>
+                               <label class="sbs"><input type="radio" name="audience" value="silver" />
+                                   Silver</label>
+                               <label class="sbs"><input type="radio" name="audience" value="gold" /> Gold</label>
+                           </fieldset>
+   
+                           <input class="submit-btn" type="submit" value="Submit Application" />
+                           <input type="text" id="application_date" name="application_date" hidden />
+                       </form>
+                   </div>
+                   
+               </div>
+           </div>
+
+     </main>
+  
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+  google: {
+    families: [
+       'Merriweather', 'Montserrat'
+    ]
+  }
+});
+    </script>
+    
+    
+    <footer>
+      <div class="foot-container">
+        <div class="logofooter">
+          <img src="images/am-logo.webp" alt="akarui-mirai-logo">
+        </div>
+        <div class="locationinfo">
+          <h3>Akarui Mirai Chamber of Commerce</h3>
+          <p>Shiratsuka Eki</p>
+          <p>Tsu Mie Japan 514-0101</p>
+        </div>
+        <div class="info">
+          <p>info@akaruimirai.com</p>
+          <p>+(81) 123-4567-8910</p>
+          
+          <a href="https://goo.gl/maps/UoJXnifdeYrWpg1S6">
+            📍Location Map</a>
+        </div>
+        
+        <p class="bottom">&copy;<span id="year"></span> Akarui Chamber | Marychel Calip | WDD 230 Project |  <span id ="lastModif"></span></p>
+      </div>
+     
+  </footer>
+    <script src="scripts/date.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
