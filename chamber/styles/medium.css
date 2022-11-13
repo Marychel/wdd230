@@ -78,4 +78,9 @@
     display: block;
     width: 230px;
   }
+  /*directory*/
+  .member-list section img{
+    width: 200px;
+    display: block;
   }
+ }
