@@ -1,0 +1,60 @@
+{
+     "local-company": [
+         {
+          "name": "Mie Prefectural Government",
+          "address": "13 Komei Tsu",
+          "contact_number": "059-224-2788",
+          "logo": "mielogo.png"
+         },
+         {
+             "name": "Mie International Foundation",
+             "address": "UST Tsu 3F 700 Hadokoro Tsu",
+             "contact_number": "059-223-5006",
+             "logo": "mieflogo.png"
+         },
+         {
+             "name": "Tsu City Office",
+             "address": "23-1 Nishimarunouchi Tsu",
+             "contact_number": "059-229-3125",
+             "logo": "tsulogo.png"
+         },
+         {
+             "name": "Tsutamaru",
+             "address": "2948 Ueno Higashi Iga",
+             "contact_number": "0595-23-0912",
+             "logo": "tsutamarulogo.gif"
+             
+         },
+         {
+             "name": "Matsusaka City",
+             "address": "1240-1 Tonomachi Matsusaka",
+             "contact_number": "0598-53-4369",
+             "logo": "matsusakalogo.png"
+         },
+         {
+             "name": "Ninja Museum of Igaryu",
+             "address": "117-13-1 Ueno Marunouchi, Iga",
+             "contact_number": "0595-23-0311",
+             "logo": "iganinjamuseum.jpeg"
+         },
+         {
+             "name": "Forest Adventure Yunoyama",
+             "address": "4958 Komonocho Komono Mie gun",
+             "contact_number": "0593-40-7739",
+             "logo": "ziplinekomono.jpeg"
+         },
+         {
+             "name": "Ise Jingu",
+             "address": "1 Ujitachi Ise",
+             "contact_number": "0596-24-1111",
+             "logo": "isejingu.png"
+         },
+         {
+            "name": "Nabana No Sato",
+            "address": "270 Komae Urushibatake Nagashima Kuwana",
+            "contact_number": "0594-41-0787",
+            "logo": "nabananosatologo.png"
+        }
+         
+     ]
+ }
