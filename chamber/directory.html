@@ -45,13 +45,19 @@
      </header>
 
      <main>  
-      <section>
-        <h2>Directory of Chamber Members</h2>
-        <button id="grid" class="button space toggle">Grid</button>
-        <button id="list" class="button space">List</button>
-        <div id="directory" class="grid-list grid">
-        </div>
-    </section>
+      <div class="directorycontainer">
+        <div class="main-div directory-button-bar">
+          <button class="directory-button" id="grid"> Grid
+          <!--  
+              <img src="images/card-view.svg" height="48" width="48">-->
+          </button>
+          <button class="directory-button" id="list"> List
+              <!-- <img src="images/list-view.svg" height="48" width="48"> -->
+          </button>
+      </div>
+      <div class="cards member-grid" id="member-data"></div>
+
+      </div>
 
      </main>
   
