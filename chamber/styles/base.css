@@ -622,7 +622,8 @@ div.membership ul {
   gap: 15px;
 }
 .member-detail-grid img{
-  width: 200px;
+  width: 50%;
+  height: auto;
 }
 .member-detail-grid a{
   text-decoration: none;
