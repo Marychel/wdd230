@@ -1,0 +1,27 @@
+<script>
+
+     function onLoad() {
+     if (window.XMLHttpRequest) {
+     // code for IE7+, Firefox, Chrome, Opera, Safari
+     xmlhttp = new XMLHttpRequest();
+     } else {
+     // code for IE6, IE5
+     xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+     }
+     xmlhttp.onreadystatechange = function() {
+     if (this.readyState == 4 && this.status == 200) {
+     alert(this.responseText);
+     
+     var object = JSON.parse(this.responseText);
+     alert(object['main']['temp']);
+     }
+     };
+     xmlhttp.open("GET","https://api.openweathermap.org/data/2.5/weather?q=Tsu&appid=8dc35cc72784031c27cc5b029ed372e1",true);
+     xmlhttp.send();
+     
+     }
+     </script>
+     
+     <body onload="onLoad()">
+     
+     </body>

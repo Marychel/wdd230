@@ -14,7 +14,7 @@
   }
 *{
     padding: 0;
-    margin: 0;
+    margin: 2px;
     box-sizing: border-box;
   }
 /*general style*/
@@ -605,7 +605,7 @@ div.membership ul {
   cursor: pointer;
 }
 .directory-button:hover{
-  background-color: #E2F4FB;
+  background-color: var(--color3);
 }
 .member-grid {
   display: grid;
@@ -620,6 +620,8 @@ div.membership ul {
   justify-content: center;
   align-items: center;
   gap: 15px;
+  border-color: #845EC2;
+  border-style: solid;
 }
 .member-detail-grid img{
   width: 50%;
