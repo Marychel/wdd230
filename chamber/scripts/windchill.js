@@ -1,57 +1,60 @@
-const currentTemp = parseInt(document.getElementById('temperature').innerText);
+//SELECT ELEMENTS
 
-const currentWindSpeed = parseInt(document.querySelector('.wind_speed').innerText);
+const temp = document.querySelector("#temperature");
+const currentWeather = document.querySelector("#weather-forecast");
+const weatherIcon = document.querySelector('#weather_icon');
+const wSpeed = document.querySelector('.wind_speed');
 
-let currentWindChill = "";
-if (currentTemp <= 50 & currentWindSpeed > 3) {
-    currentWindChill = Math.round(35.74 + (0.6215 * currentTemp ) - 
-                    (35.75 * (currentWindSpeed ** 0.16)) + 
-                    (0.4275 * currentTemp * (currentWindSpeed ** 0.16) )).toString() + "°F";
+// App data
+const weather = {};
 
+// API KEY
+const key = "8dc35cc72784031c27cc5b029ed372e1";
+
+
+// GET WEATHER FROM API PROVIDER
+
+let api = `https://api.openweathermap.org/data/2.5/weather?q=Tsu&units=imperial&appid=${key}`;
+    
+fetch(api)
+    .then(function(response){
+        let data = response.json();
+        console.log(data)
+        return data;
+        
+    })
+    .then(function(data){
+        weather.temperature = data.main.temp.toFixed(0);
+        weather.description = data.weather[0].description;
+        weather.icon = data.weather[0].icon
+        weather.windSpeed = data.wind.speed.toFixed(0);
+        //weather.humidity = data.main.humidity;
+    })
+    .then(function(){
+        displayWeather();
+        windChill();
+    });
+
+// DISPLAY WEATHER
+function displayWeather(){
+    const iconsrc = `https://openweathermap.org/img/w/${weather.icon}.png`;
+    temp.innerHTML = weather.temperature;
+    currentWeather.innerHTML = weather.description;
+    //locationEle.innerHTML = `${weather.city}, ${weather.country}`;
+    //humidity.innerHTML =`${weather.humidity}%`;
+    wSpeed.innerHTML = `${weather.windSpeed} mph`;
+    weatherIcon.setAttribute('src', iconsrc);
+    weatherIcon.setAttribute('alt', weather.description);
 }
 
-else {
-    currentWindChill = "N/A"
-}
-
-document.querySelector('.wind_chill').innerText = String(currentWindChill)
-
-//current weather for Tsu
-// select HTML elements in the document
-const currentTemp = document.querySelector('#current-temp');
-const weatherIcon = document.querySelector('#weather-icon');
-const captionDesc = document.querySelector('figcaption');
-//const wind_speed = document.querySelector(`windchillid`);
-//wind_speed.innerHTML=`test`;
-
-const apikey="8dc35cc72784031c27cc5b029ed372e1"
-const url = 'https://api.openweathermap.org/data/2.5/weather?q=Tsu&units=imperial&appid='+apikey;
-
-
-async function apiFetch() {
-     try {
-       const response = await fetch(url);
-       if (response.ok) {
-         const data = await response.json();
-         console.log(data); //this is for testing the call
-          displayResults(data);
-       } else {
-           throw Error(await response.text());
-       }
-     } catch (error) {
-         console.log(error);
-     }
-   }
-   
-   apiFetch();
-
-   function  displayResults(weatherData) {
-     currentTemp.innerHTML = `<strong>${weatherData.main.temp.toFixed(0)}</strong>`;
-   
-     const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
-     const desc = weatherData.weather[0].description;
-   
-     weatherIcon.setAttribute('src', iconsrc);
-     weatherIcon.setAttribute('alt', desc);
-     captionDesc.textContent = desc;
-   }
+function windChill(temp, wSpeed){
+ 
+    if (temp <= 50 && wSpeed > 3){
+       let chill = 35.74 + 0.6215 * temp - 35.75 * 
+                Math.pow(wSpeed, 0.16) + 0.4275 * temp * Math.pow(wSpeed, 0.16);
+        chill = chill.toFixed(0) + "&deg;F";        
+                return chill;
+    }else{return "N/A";}
+  
+    
+  }
