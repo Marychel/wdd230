@@ -5,7 +5,7 @@
     font-family: "Merriweather", serif;
     font-family: "Montserrat", sans-serif;
 
-    --rainbow: linear-gradient(90deg,  #845EC2,#3C8DA8, #FEFEDF, #3C8DA8, #845EC2);
+    --rainbow: linear-gradient(90deg,  #845EC2,#3C8DA8, #fefedf, #FEFEDF, #3C8DA8, #845EC2);
     --color1: #845ec2;
     --color2: #E2F4FB;
     --color3: #3C8DA8;
