@@ -241,19 +241,19 @@ section h3{
   display: grid;
   grid-template-columns: 1fr .65fr;
   margin-top: 10px;
+  column-gap: 10px;
 }
-.wspeed-label{
+.wspeed-label, .wchill-label {
   grid-column: 1/2;
   text-align: right;
+  font-size: .95em;
+  font-weight: bold;
 }
 .wind-speed{
   grid-column: 2/3;
   text-align: center;
 }
-.wchill-label{
-  grid-column: 1/2;
-  text-align: right;
-}
+
 .wind-chill{
   grid-column: 2/3;
   text-align: center;

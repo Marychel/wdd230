@@ -42,7 +42,6 @@ fetch(api)
     })
     .then(function(){
         displayWeather();
-        windChill();
     });
 
 // DISPLAY WEATHER
