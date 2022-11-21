@@ -7,16 +7,6 @@
      text-align: center;
 }
 
-.container2 {
-     background-image: linear-gradient(90deg,  #845EC2,#3C8DA8, #fefedf, #fefedf, #FEFEDF, #3C8DA8, #845EC2);
-     width: 500px;
-     height: 300px;
-     border: 1px solid #845EC2;
-     margin: 10px auto;
-     text-align: center;
-}
-
-
 h1, h2, p {
      font-family: cursive;
 }
