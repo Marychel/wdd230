@@ -46,7 +46,7 @@ fetch(api)
 
 // DISPLAY WEATHER
 function displayWeather(){
-    const iconsrc = `https://openweathermap.org/img/w/${weather.icon}.png`;
+    const iconsrc = `https://openweathermap.org/img/wn/${weather.icon}@4x.png`;
     temp.innerHTML = weather.temperature;
     currentWeather.innerHTML = weather.description;
     wSpeed.innerHTML = `${weather.windSpeed} mph`;
