@@ -39,27 +39,33 @@ const imgObserver = new IntersectionObserver((entries, imgObserver) => {
 //display message to the user or welcome message
 
 const currentDateInMilli =Date.now();
-const lastDate = localStorage.getItem("last-visit");
-let numVisits = Number(window.localStorage.getItem("visits-ls"));
-// increment the number of visits.
-numVisits++;
 
+//grab the data from local storage 
+const lastDate = localStorage.getItem("last-visit"); // undefined
+let numVisits = localStorage.getItem("visits-ls"); //undefined  "1"
+
+//case when is your first visit 
 if (lastDate === undefined){
-    localStorage.setItem("last-visit", currentDateInMilli);
+  localStorage.setItem("last-visit", currentDateInMilli);
+  localStorage.setItem("visits-ls", '1');
+  const message = "This is your first time in this page."; 
+  document.querySelector('.localstorage').textContent = message;
 }else{ 
-const ld = parseFloat(lastDate);
-const days_ago = (currentDateInMilli - ld) / 86400000;
-const result = days_ago.toFixed(0);
-let dayS;
-if (result <= 1){
-  dayS = "day";
-} else{
-  dayS = "days"
+  const ld = parseFloat(lastDate);// "123512341234234"
+  //const milInDay = 24 * 60 * 60 * 1000;
+  const secs = 1000;
+  const days_ago = (currentDateInMilli - ld) / secs;  
+  const result = days_ago.toFixed(0);
+  let dayS;
+  if (result <= 1){
+    dayS = "day";
+  } else{
+    dayS = "days"
+  }
+  let message = `You have visited this page for ${numVisits} times. It's been ${result} ${dayS} since your last visit.`;
+  document.querySelector('.localstorage').innerHTML = message;
+  localStorage.setItem("last-visit", currentDateInMilli);
+  let newNumOfDays = parseFloat(numVisits) + 1;
+  localStorage.setItem("visits-ls", newNumOfDays.toString());
 }
-let message;
-if (numVisits == 1 ){
-  message = "This is your first time in this page."; 
-}else{message = `You have visited this page for ${numVisits} times. It's been ${result} ${dayS} since your last visit.`;}
-localStorage.setItem("last-visit", currentDateInMilli);
-document.querySelector('.localstorage').innerHTML = message;
-}
+  
