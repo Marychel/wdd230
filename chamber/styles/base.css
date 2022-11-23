@@ -51,6 +51,7 @@ nav{
   padding: 10px;
   margin: 0 auto;
   width: 95%;
+  z-index: 1;
 }
 .hamBtn{
   /*margin: 0.2rem 2vw;*/
@@ -108,8 +109,10 @@ nav ul li a:hover {
   background-color: var(--color2);
   /*background-color: rgba(0, 0, 0, 0.3);*/
 }
+
 .navi{
   display: none;
+  order: 7;
 }
 .social{
   display: flex;
@@ -117,7 +120,7 @@ nav ul li a:hover {
   align-items: center;
 }
 .social img{
-  width: 40px;
+  width: 42px;
 }
 header p.currentDate{
   text-align: center;
@@ -185,6 +188,7 @@ section.hero div a:hover{
 }
 section.hero img{
   height: 100%;
+  object-fit: cover;
 }
 
 section.event{
@@ -589,6 +593,8 @@ div.membership ul {
   margin: 3%;
   text-align: center;
   background-image: var(--rainbow);
+  font-size: 30px;
+  font-family: cursive;
 }
 
 /*directory*/
