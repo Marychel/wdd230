@@ -68,7 +68,7 @@ nav{
   justify-content: center;
 }
 .logo img{
-  width: 50px;
+  width: 80px;
   
 }
 .company-name{
@@ -374,7 +374,7 @@ footer{
   padding: 10px;
 }
 .logofooter img{
-  width: 100px;
+  width: 80px;
 }
 .locationinfo{
   display: flex;
