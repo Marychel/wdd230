@@ -42,7 +42,7 @@ const currentDateInMilli =Date.now();
 
 //grab the data from local storage 
 const lastDate = localStorage.getItem("last-visit"); // undefined
-let numVisits = localStorage.getItem("visits-ls"); //undefined  "1"
+let numVisits = localStorage.getItem("visits-ls"); //undefined 
 
 //case when is your first visit 
 if (lastDate === undefined){
@@ -63,7 +63,7 @@ if (lastDate === undefined){
     dayS = "days"
   }
   let message = `You have visited this page for ${numVisits} times. It's been ${result} ${dayS} since your last visit.`;
-  document.querySelector('.localstorage').innerHTML = message;
+  document.querySelector('.localstorage').textContent = message;
   localStorage.setItem("last-visit", currentDateInMilli);
   let newNumOfDays = parseFloat(numVisits) + 1;
   localStorage.setItem("visits-ls", newNumOfDays.toString());
