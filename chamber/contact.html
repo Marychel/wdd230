@@ -10,7 +10,7 @@
         <link rel="icon" type="image/png" sizes="32x32" href="am-logo.svg">
         <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
           <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-          <link rel="stylesheet" href="styles/normalize.css">
+          <link rel="stylesheet" href="styles/normalized.css">
           <link rel="stylesheet" href="styles/base.css">
           <link rel="stylesheet" href="styles/medium.css">
           <link rel="stylesheet" href="styles/large.css">
@@ -23,33 +23,57 @@
         <nav>
             <button class="hamBtn"><span>&#9776;</span><span>&#10006;</span></button>
             <div class="logo">
-              <a href="index.html"><img src="images/am-logo.webp" alt="akarui-mirai-logo" height="42" width="42"></a>
+                <a href="index.html"><img src="images/am-logo.webp" alt="akarui-mirai-logo" height="42" width="42"></a>
                 <div class="company-name">
                     <h1>Akarui Mirai</h1>
                     <p>Chamber of Commerce</p>
                 </div>
             </div>
             <ul class="navi">
-                <li><a href="index.html" class="uppernavigation"> Home</a></li>
-                <li><a href="discover.html" class="uppernavigation">Discover</a></li>
+                <li><a href="index.html"> Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
                 <li><a href="directory.html">Directory</a></li>
                 <li><a href="join.html">Join</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
             <div class="social">
-              <a href="https://www.facebook.com/"><img src="images/facebook.webp" alt="facebook icon" height="42" width="42"></a>
-              <a href="https://www.linkedin.com/"><img src="images/linked.webp" alt="linkedin icon" height="42" width="42"></a>
+                <a href="https://www.facebook.com/"><img src="images/facebook.webp" alt="facebook icon" height="42" width="42"></a>
+                <a href="https://www.linkedin.com/"><img src="images/linked.webp" alt="linkedin icon" height="42" width="42"></a>
             </div>
         </nav>
         <p class="currentDate"></p>
      </header>
 
      <main>
-      <div class="thankyou">Thank you for registering. <br>We look forward seeing you on our orientation event.</div>
+          <div class="background-fill stacked">
+               <h2 class="center">Akarui Mirai Chamber of Commerce</h2>
+   
+              <div class="background-fill sxs">
+                <div class="hide-base">
+                  <div class="membership" id="gold-level">
+                    <div>Contact us</div>
+                  </div> 
+                </div>
 
+                <div class="form">
+                  <form method="get" action="thankyou.html">
+                    <fieldset>
+                      <legend>Tell us more.</legend>
+                        <label class="top">First Name* <input type="text" name="fname" required /></label>
+                        <label class="top">Last Name* <input type="text" name="lname" required /></label>
+                        <label class="top">Email* <input type="email" name="email"               placeholder="akaruimirai@gmail.com" required /></label>
+                        <label class="top">Inquiries<textarea class="description-text" rows="4" cols="20"
+                                      name="business_description"></textarea></label>
+                    </fieldset>
+   
+                      <input class="submit-btn" type="submit" value="Send your inquiries here" />
+                      <input type="text" id="application_date" name="application_date" hidden />
+                  </form>
+                </div>
+              </div>
+            </div>
      </main>
   
-    
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script>
         WebFont.load({
@@ -65,7 +89,7 @@
     <footer>
       <div class="foot-container">
         <div class="logofooter">
-          <a href="index.html"><img src="images/am-logo.webp" alt="akarui-mirai-logo" height="42" width="42"></a>
+            <a href="index.html"><img src="images/am-logo.webp" alt="akarui-mirai-logo" height="42" width="42"></a>
         </div>
         <div class="locationinfo">
           <h3>Akarui Mirai Chamber of Commerce</h3>

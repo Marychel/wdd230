@@ -27,8 +27,11 @@ img {
 h1,h2,h3,h4{
   font-family: Merriweather;
 }
+
 p{
   font-family: Montserrat;
+  font-size: smaller;
+  line-height: 20px;
 }
 nav, main, .foot-container{
   max-width: 900px;
@@ -287,11 +290,11 @@ section h3{
   text-align: center;
 } 
 .spothlight1 hr, .spothlight2 hr, .spothlight3 hr{
-  margin-top: 8px;
+  margin-top: 10px;
 }
 .spothlights a{
   text-decoration: none;
-  color: black;
+  color: var(--color1);
 }
 span.spotlight_icon{
   font-size: 60px;
@@ -301,11 +304,16 @@ span.spotlight_icon{
 span.spotlight_icon + p{
   margin-top: 10px;
   margin-bottom: 10px;
-
 }
 
 section.spothlights {
   padding: 10px;
+}
+
+.email {
+  font-family: cursive;
+  font-size: 10px;
+
 }
 
 
@@ -446,7 +454,7 @@ form input.submit-btn {
   border: none;
   background-color: var(--color2);
   color: black;
-  border-radius: 1rem;
+  border-radius: 0.75rem;
   padding: 0.75rem;
   margin: 0 0 2rem 2%;
   width: 96%;
@@ -671,4 +679,11 @@ div.membership ul {
 .member-list section .member-address{
   width: 250px;
   display: none;
+}
+
+/*weather information*/
+.weatherinfo {
+  font-size: 10px;
+  font-family: montserrat;
+  line-height: 0.5px;
 }
