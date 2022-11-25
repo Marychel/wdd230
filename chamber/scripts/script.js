@@ -41,8 +41,13 @@ const imgObserver = new IntersectionObserver((entries, imgObserver) => {
 const currentDateInMilli =Date.now();
 
 //grab the data from local storage 
-const lastDate = localStorage.getItem("last-visit"); // undefined
+let lastDate = localStorage.getItem("last-visit"); // undefined
 let numVisits = localStorage.getItem("visits-ls"); //undefined 
+
+if(numVisits===undefined || Number.isNaN(numVisits)|| numVisits==="NaN" ){
+  numVisits=0;
+  lastDate=undefined;
+}
 
 //case when is your first visit 
 if (lastDate === undefined){
@@ -51,10 +56,10 @@ if (lastDate === undefined){
   const message = "This is your first time in this page."; 
   document.querySelector('.localstorage').textContent = message;
 }else{ 
-  const ld = parseFloat(lastDate);// "123512341234234"
-  //const milInDay = 24 * 60 * 60 * 1000;
-  const secs = 1000;
-  const days_ago = (currentDateInMilli - ld) / secs;  
+  
+  let date = new Date();
+  let ld = new Date(parseInt(lastDate, 10));
+  let days_ago = ((date - ld)/86400000);
   const result = days_ago.toFixed(0);
   let dayS;
   if (result <= 1){
