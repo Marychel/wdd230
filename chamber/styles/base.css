@@ -132,8 +132,9 @@ header p.currentDate{
 }
 
 /*main*/
-main{
+main {
   margin: auto;
+  margin-top: 10px;
 }
 .container {
   padding: 10px;
@@ -686,4 +687,5 @@ div.membership ul {
   font-size: 10px;
   font-family: montserrat;
   line-height: 0.5px;
+  padding-bottom: 20px;
 }
