@@ -309,6 +309,7 @@ span.spotlight_icon + p{
 
 section.spothlights {
   padding: 10px;
+  justify-content: space-evenly;
 }
 
 .email {
@@ -453,18 +454,18 @@ form label.sbs {
 
 form input.submit-btn {
   border: none;
-  background-color: var(--color2);
-  color: black;
+  background-color: #464b73;;
+  color: goldenrod;
   border-radius: 0.75rem;
   padding: 0.75rem;
   margin: 0 0 2rem 2%;
-  width: 96%;
+  width: 100%;
   max-width: 20rem;
   font-size: 20px;
 }
 
 form input.submit-btn:hover {
-  background-color: var(--color1);
+  background-color: var(--color3);
   color: black;
   cursor: pointer;
 }
@@ -483,6 +484,10 @@ main.center {
 }
 h2.center {
   text-align: center;
+}
+h2.center::first-line {
+  font-size: 40px;
+  text-transform: uppercase;
 }
 
 #bronze-level {
@@ -509,13 +514,29 @@ h2.center {
   height: 250px;
   width: 250px;
   border: 1px solid black;
-  border-radius: 5em;
+  border-radius: 30px;
   text-align: center;
   font-weight: bolder;
   font-size: 20px;
   transition: 1s;
   transition-timing-function: ease;
 }
+.contactchamber {
+  height: 100%;
+  width: 45%;
+  padding-top: 50px;
+}
+
+.contact-us {
+  text-align: left;
+  line-height: 30px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: row;
+}
+
 
 .hide-base {
   display: none;
@@ -575,7 +596,7 @@ div.membership ul {
 }
 
 .background-fill {
-  background-image: var(--rainbow);
+  background-color: var(--nav);
 }
 
 .stacked {
@@ -604,6 +625,7 @@ div.membership ul {
   background-image: var(--rainbow);
   font-size: 30px;
   font-family: cursive;
+  line-height: 50px;
 }
 
 /*directory*/
