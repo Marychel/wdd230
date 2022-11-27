@@ -585,10 +585,12 @@ div.top-header button.open span:nth-child(1) {
 }
 
 div.membership li {
-  font-size: 10px;
+  font-size: 15px;
   font-weight: 400;
   text-align: left;
   padding: 2px;
+  font-family: sans-serif;
+  line-height: 25px;
 }
 
 div.membership ul {
