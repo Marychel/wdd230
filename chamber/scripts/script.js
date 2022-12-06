@@ -67,8 +67,8 @@ if (lastDate === undefined){
   } else{
     dayS = "days"
   }
-  let message = `You have visited this page for ${numVisits} times. It's been ${result} ${dayS} since your last visit.`;
-  document.querySelector('.localstorage').innerHTML = message;
+  let message = "You have visited this page for ${numVisits} times. It's been ${result} ${dayS} since your last visit.";
+  document.querySelector('.localstorage').textContent = message;
   localStorage.setItem("last-visit", currentDateInMilli);
   let newNumOfDays = parseFloat(numVisits) + 1;
   localStorage.setItem("visits-ls", newNumOfDays.toString());

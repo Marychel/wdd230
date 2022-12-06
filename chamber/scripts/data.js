@@ -1,6 +1,4 @@
 // add cards and read json for directory page
-
-
 const requestURL = 'data.json';
 const cards = document.querySelector('.cards');
 
