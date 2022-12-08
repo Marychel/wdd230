@@ -38,39 +38,42 @@ const imgObserver = new IntersectionObserver((entries, imgObserver) => {
 //determine how many days it has been user visited
 //display message to the user or welcome message
 
-const currentDateInMilli =Date.now();
+
+//const currentDateInMilli =Date.now();
 
 //grab the data from local storage 
-let lastDate = localStorage.getItem("last-visit"); // undefined
-let numVisits = localStorage.getItem("visits-ls"); //undefined 
 
-if(numVisits===undefined || Number.isNaN(numVisits)|| numVisits==="NaN" ){
-  numVisits=0;
-  lastDate=undefined;
-}
+//let lastDate = localStorage.getItem("last-visit"); // undefined
+//let numVisits = localStorage.getItem("visits-ls"); //undefined 
+
+//if(numVisits===undefined || Number.isNaN(numVisits)|| numVisits==="NaN" ){
+  //numVisits=0;
+  //lastDate=undefined;
+//}
 
 //case when is your first visit 
-if (lastDate === undefined){
-  localStorage.setItem("last-visit", currentDateInMilli);
-  localStorage.setItem("visits-ls", '1');
-  const message = "This is your first time in this page."; 
-  document.querySelector('.localstorage').textContent = message;
-}else{ 
+//let message;
+//if (lastDate === undefined){
+ // localStorage.setItem("last-visit", currentDateInMilli);
+  //localStorage.setItem("visits-ls", '1');
+  //message = "This is your first time in this page."; 
   
-  let date = new Date();
-  let ld = new Date(parseInt(lastDate, 10));
-  let days_ago = ((date - ld)/86400000);
-  const result = days_ago.toFixed(0);
-  let dayS;
-  if (result <= 1){
-    dayS = "day";
-  } else{
-    dayS = "days"
-  }
-  let message = "You have visited this page for ${numVisits} times. It's been ${result} ${dayS} since your last visit.";
-  document.querySelector('.localstorage').textContent = message;
-  localStorage.setItem("last-visit", currentDateInMilli);
-  let newNumOfDays = parseFloat(numVisits) + 1;
-  localStorage.setItem("visits-ls", newNumOfDays.toString());
-}
+//}else{ 
   
+  //let date = new Date();
+  //let ld = new Date(parseInt(lastDate, 10));
+  //let days_ago = ((date - ld)/86400000);
+  //const result = days_ago.toFixed(0);
+  //let dayS;
+  //if (result <= 1){
+   // dayS = "day";
+  //} else{
+  //  dayS = "days"
+  //}
+ // message = "You have visited this page for ${numVisits} times. It's been ${result} ${dayS} since your last visit.";
+  
+  //localStorage.setItem("last-visit", currentDateInMilli);
+  //let newNumOfDays = parseFloat(numVisits) + 1;
+  //localStorage.setItem("visits-ls", newNumOfDays.toString());
+//}
+//document.querySelector('.localstorage').textContent = message;
