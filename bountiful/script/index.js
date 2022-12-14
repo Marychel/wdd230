@@ -78,7 +78,6 @@ const hum = document.querySelector('.hum');
             hum.innerHTML = `<i class="fas fa-tint"> ${data.current.humidity}%`;
             icon.setAttribute('src', image);
             icon.setAttribute('alt', descript);
-            console.log(desc)
             const three_day = data.daily.slice(0,3);
            
             
@@ -97,8 +96,22 @@ const hum = document.querySelector('.hum');
                 document.querySelector(`.icon${day + 1}`).setAttribute('src', imagesrc);
                 document.querySelector(`.icon${day + 1}`).setAttribute('alt', description);
                 day++;
-            
-
-    
+              
         });
     })
+
+    //index juce counter
+    // initialize display elements
+    const numDrinksDisplay = document.getElementById("drink-counter");
+
+    // get the stored value in localStorage
+    let numDrinks = localStorage.numDrinks
+
+    // determine if this is the first visit or display the number of visits.
+    if (numDrinks != undefined) {
+        numDrinksDisplay.innerText = numDrinks;
+
+    } else {
+        numDrinksDisplay.innerText = 0;
+        localStorage.numDrinks = 0;
+    }

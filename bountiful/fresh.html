@@ -18,70 +18,143 @@
 
   <body>
     <header>
+      
       <div class="bountiful-header">
-        <img src="images/bountiful-logo.webp" alt="bountiful-logo">
+        <img src="images/bountifullogo.svg" alt="bountiful-logo">
       </div>
-
-      <div class="social">
-          <a href="https://www.facebook.com/"><img src="images/facebook.webp" alt="facebook icon" height="42" width="42"></a>
-          <a href="https://www.linkedin.com/"><img src="images/linked.webp" alt="linkedin icon" height="42" width="42"></a>
-          <a href="https://www.instagram.com/"><img src="images/instagram.webp" alt="linkedin icon" height="42" width="42"></a>
-      </div>
-
-         
+      
         <nav>
-          <ul>
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">Fresh</a></li>
-            <li><a href="#">About Us</a></li>
+          <button class="hamBtn"><span>&#9776;</span><span>&#10006;</span></button>
+          <ul class="navi">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="fresh.html">Fresh</a></li>
+            <li><a href="about.html">About Us</a></li>
           </ul>
-        </nav>
-       
-    </header>
-
-    <main>
-        <div class="form">
-          <form method="get" action="thankyou.html">
-            <fieldset>
-              <legend>Customer's information</legend>
-                <label class="top">Full Name* <input type="text" name="fname" required /></label>
-                <label class="top">Email Address* <input type="text" name="email" required /></label>
-                <label class="top">Contact Number* 
-                  <input type="text" pattern="[A-Za-z\- ]{7,}"name="contact" /></label>
-                <label class="top">Select Drink 1* 
-                  <input type="selectDrink1" name="selectdrink" placeholder="fruit options" required /></label>
-                <label class="top">Select Drink 2*
-                  <input type="tel" name="cell_phone" placeholder="0591234345" required /></label>
-                <label class="top">Select Drink 3*
-                  <input type="text" name="business_title" required /></label>
-                <label class="top">Additional Instruction
-                  <textarea class="description-text" rows="4" cols="20"name="business_description">
-
-                  </textarea>
-                </label>
-            </fieldset>
-
-            <fieldset>
-                          <legend>Membership Level</legend>
-                          <label class="sbs"><input type="radio" name="audience" value="np" required />
-                              Non-profit</label>
-                          <label class="sbs"><input type="radio" name="audience" value="bronze" />
-                              Bronze</label>
-                          <label class="sbs"><input type="radio" name="audience" value="silver" />
-                              Silver</label>
-                          <label class="sbs"><input type="radio" name="audience" value="gold" /> Gold</label>
-                      </fieldset>
-
-                      <input class="submit-btn" type="submit" value="Click here to register" />
-                      <input type="text" id="application_date" name="application_date" hidden />
-                  </form>
-              </div>
-              
-          </div>
+          <div class="social">
+            <a href="https://www.facebook.com/"><img src="images/facebook.webp" alt="facebook icon" height="42" width="42"></a>
+            <a href="https://www.linkedin.com/"><img src="images/linked.webp" alt="linkedin icon" height="42" width="42"></a>
+            <a href="https://www.instagram.com/"><img src="images/instagram.png" alt="linkedin icon" height="42" width="42"></a>
         </div>
-    </main>
-        
+        </nav>   
+    </header>
+      <main class="fresh">
+        <div class="hero">
+            <img src="images/fruitwithclick.webp" alt="fruits">
+          </div>
+       <div class="fresh-container">
+        <form id="drink-form" class="form drink-order-form" onsubmit="return false">
+          <h2>Customize Your Drink</h2>
+          <hr>    
+          <fieldset>
+              <label class="top">Name* <input type="text" id="user-name" name="user-name" required ></label>
+              <label class="top">Email*
+                  <input type="email" id="email" name="email" placeholder="someone@gmail.com" required ></label>
+              <label class="top">Cell phone number*
+                  <input type="tel" id = "cell-phone" name="cell-phone" placeholder="1235551234" required ></label>
+          
+              <label class="top">Select fruit*
+                  <select name="Fruit-1" id="fruit1" required>
+                      <option value="">--choose fruit--</option>
+                  </select>
+              </label>
+              <label class="top">Select fruit
+                  <select name="Fruit-2" id="fruit2">
+                      <option value="">--choose fruit--</option>
+                  </select>
+              </label>
+              <label class="top">Select fruit
+                  <select name="Fruit-3" id="fruit3">
+                      <option value="">--choose fruit--</option>
+                  </select>
+              </label>
+              <label class="top">Special Instructions
+                  <textarea name="special-instructions" id = "special-instructions" rows="3" cols="23"></textarea>
+              </label>
+              <button id="get-drink-info-button" type="submit" class="submit-btn">Nutritional Content</button>
+              <button id="drink-form-reset" type="reset" class="submit-btn reset-btn">Clear Form</button>
+          </fieldset>
 
+          <input type="text" id="drink-date" name="drink-date" hidden >
+      </form>
+      <div class="info-con">
+
+        <div class="drink-list-outer-div center">
+          <h2>Created Drinks</h2>
+          <hr>
+          <div id="drink-list-inner-div" class="scrollable">
+              <table class="drink-list" id="drink-list-table-id" >
+              </table>
+          </div>
+      </div>
+      <div class="drink-nutrition-outer-div" >
+          <h2>Nutritive Values</h2>
+          <hr>
+          <table class="drink-nutrition-table center" id="drink-nutrition-table-id">
+              <tr>
+                  <td><h2>Date</h2></td>
+                  <td id="drink-date-cell-id"><p></p></td>
+              </tr>
+              <tr>
+                  <td><h2>Name</h2></td>
+                  <td id="drink-user-name-cell-id"><p></p></td>
+              </tr>
+              <tr>
+                  <td><h2>Email</h2></td>
+                  <td id="drink-user-email-cell-id"></td>
+              </tr>
+              <tr>
+                  <td><h2>Phone</h2></td>
+                  <td id="drink-user-phone-cell-id"></td>
+              </tr>
+              <tr>
+                  <td><h2>Fruits</h2></td>
+                  <td id="drink-fruit-names-cell-id"></td>
+              </tr>
+              <tr>
+                  <td><h2>Carbs</h2></td>
+                  <td id="drink-carbs-cell-id"></td>
+              </tr>
+              <tr>
+                  <td><h2>Protein</h2></td>
+                  <td id="drink-protein-cell-id"></td>
+              </tr>
+              <tr>
+                  <td><h2>Fat</h2></td>
+                  <td id="drink-fat-cell-id"></td>
+              </tr>
+              <tr>
+                  <td><h2>Sugar</h2></td>
+                  <td id="drink-sugar-cell-id"></td>
+              </tr>
+              <tr>
+                  <td><h2>Calories</h2></td>
+                  <td id="drink-calories-cell-id"></td>
+              </tr>
+              <tr>
+                  <td><h2>Grams</h2></td>
+                  <td id="drink-grams-cell-id"></td>
+              </tr>
+              <tr>
+                  <td><h2>Instructions</h2></td>
+                  <td id="drink-special-instructions-cell-id"></td>
+              </tr>
+
+          </table>
+
+      </div>
+      <!-- <div class="drink">
+        <h2>Created Drink</h2>
+        <div class="drink-list"></div>
+      </div>
+      <div class="drink-info">
+        <h2>Nutritive Value</h2>
+        <div class="info"></div>
+      </div> -->
+
+      </div>
+      </div>
+
+      </main>
       <footer>
         <div class="foot-container">
           <div class="logofooter">
@@ -99,7 +172,7 @@
           <p class="bottom">&copy;<span id="year"></span> 2022 Final Project | WDD 230 | Marychel Calip |<span id ="lastModif"></span></p>
 
       </footer>
-      <script src="script/index.js"></script>
+      <script src="script/fresh.js"></script>
     </body>
   </html>
   
