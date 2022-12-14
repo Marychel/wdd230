@@ -14,79 +14,100 @@
           <link rel="stylesheet" href="styles/base.css">
           <link rel="stylesheet" href="styles/medium.css">
           <link rel="stylesheet" href="styles/large.css">
+          <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
   </head>
 
   <body>
     <header>
+      
       <div class="bountiful-header">
         <img src="images/bountifullogo.svg" alt="bountiful-logo">
       </div>
       
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Fresh</a></li>
-          <li><a href="#">About Us</a></li>
-        </ul>
-
-        <div class="social">
-          <a href="https://www.facebook.com/"><img src="images/facebook.webp" alt="facebook icon" height="42" width="42"></a>
-          <a href="https://www.linkedin.com/"><img src="images/linked.webp" alt="linkedin icon" height="42" width="42"></a>
-          <a href="https://www.instagram.com/"><img src="images/instagram.png" alt="linkedin icon" height="42" width="42"></a>
+        <nav>
+          <button class="hamBtn"><span>&#9776;</span><span>&#10006;</span></button>
+          <ul class="navi">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="fresh.html">Fresh</a></li>
+            <li><a href="about.html">About Us</a></li>
+          </ul>
+          <div class="social">
+            <a href="https://www.facebook.com/"><img src="images/facebook.webp" alt="facebook icon" height="42" width="42"></a>
+            <a href="https://www.linkedin.com/"><img src="images/linked.webp" alt="linkedin icon" height="42" width="42"></a>
+            <a href="https://www.instagram.com/"><img src="images/instagram.png" alt="instagram icon" height="42" width="42"></a>
         </div>
-      </nav>   
+        </nav>   
     </header>
-
       <main>
-        <img src="images/fruitwithclick.webp" alt="fruit-image-with-a-click">
+        <div class="hero">
+          <img src="images/fruitwithclick.webp" alt="fruit-image-with-click">
+          <div class="action">
+            <a href="fresh.html">Create Drink</a>
+          </div>
+        </div>
+        
         <div class="container">
 
-          <section class="hero">
-            <h2>Bountiful Food</h2>
-            <div class="action">
-              <a href="#"></a>
-            </div>
-          </section>
-
           <section class="fruit card">
-            <h3>Drink card</h3>
-          <h4><span>🏫</span>Free Classes for JHS</h4>
-          <p></p>
+            <h3>Fruit Drinks</h3>
+            <img src="images/fruitjuice.webp" alt="fruit juices">
+            <p class="drinks-created"></p>
           </section>
 
             <section class="summary">
               <h3>Summary information</h3>
                 <p>Bountiful Foods is small business specializing in organic, locally grown foods. They are physically located in Carlsbad, California, however, they have many food trucks that cover the coastal area from Los Angeles to San Diego. The company sells fruits and produce directly from the farmers in the area, but also uses some national and international suppliers. The owner-operated company caters to walk in traffic at their storefront in Carlsbad and, of course, their food trucks. They deliver and manage those orders on the phone and via the website. The mission is to provide fresh and healthy food options, including organic, made to order, fruit drinks and fruit bags, to the local population and to tourists visiting the coastal areas. The theme should support healthy eating, organic bounty, and convenience.</p>
-            </section>
+                <img src="images/california.webp" alt="coastal-carlsbad">
+            
+              </section>
 
-            <section class="coastal card">
-              <h3>Coastal card</h3>
-            <h4><span>🏫</span>Free Classes for JHS</h4>
-            <p></p>
-            </section>
-
-            <section class="weather">
-              <h3>Weather</h3>
-            <div class="side_by_side">
-                <img class="spotlight_icon" id="weather_icon" src="images/02d.webp" alt="sunny cloudy">
-                <h4><span id='temperature'>32</span>°F</h4>
+              <div class="weather">
+                <h2>Weather Forecast</h2>
+                    <div class="currentW">
+                     <img src="images/weather-icons/01d.png" alt="sunny" class="icon">
+                     <span class="desc">sunny</span>
+                     <span class="currentemp">12°C</span>
+                     <span class="hum"><i class="fas fa-tint"></i> 12%</span>
+                    </div>
+                <div class="fore-col">
+                     <div class="col">
+                         <span class="date1">Today</span>
+                         <img src="images/weather-icons/01d.png" alt="sunny" class="icon1">
+                         <span class="temp1">12°C</span>
+                     </div>
+                     <div class="col">
+                         <span class="date2">Dec 13</span>
+                         <img src="images/weather-icons/01d.png" alt="sunny" class="icon2">
+                         <span class="temp2">12°C</span>
+                     </div>
+                     <div class="col">
+                         <span class="date3">Dec 13</span>
+                         <img src="images/weather-icons/01d.png" alt="sunny" class="icon3">
+                         <span class="temp3">12°C</span>
+                     </div>
+                </div>
             </div>
+        </div>
       </main>
 
 
       <footer>
-        <img src="images/bflogo.svg" alt="bountiful-circular-logo" height="80" width="80">
-        
-        <div class="social">
-          <a href="https://www.facebook.com/"><img src="images/facebook.webp" alt="facebook icon" height="42" width="42"></a>
-          <a href="https://www.linkedin.com/"><img src="images/linked.webp" alt="linkedin icon" height="42" width="42"></a>
-          <a href="https://www.instagram.com/"><img src="images/instagram.webp" alt="linkedin icon" height="42" width="42"></a>
-       </div>
-
-       <p class="bottom">&copy;<span id="year"></span> Final Project | WDD 230 | Marychel<span id ="lastModif"></span></p>
+        <div class="foot-container">
+          <div class="logofooter">
+            <a href="index.html"><img src="images/bountiful-logo.svg" alt="bountiful-logo"></a>
+          </div>
+          <div class="locationinfo">
+            <h3>Bountiful Food</h3>
+            <p>Carlsbad, California 92008 USA</p>
+              <a href="https://goo.gl/maps/uLYeneHftfd6JzBV6">
+              📍Bountiful Food Company Location</a>
+            <p>Attribution: Openweather.org</p>
+          </div>
+       
+          </div>
+          <p class="bottom">&copy;<span id="year"></span> 2022 Final Project | WDD 230 | Marychel Calip |<span id ="lastModif"></span></p>
 
       </footer>
       <script src="script/index.js"></script>
     </body>
   </html>
-  
